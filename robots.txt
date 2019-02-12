@@ -1,0 +1,12 @@
+User-Agent: *
+Host: recordstation.ru
+User-agent: MediaPartners-Google
+Disallow: /redirect/
+Allow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Twitterbot
+Disallow: /redirect/
+Allow: /

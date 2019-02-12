@@ -1,0 +1,16 @@
+.preview_image div#trancehits:before {
+    content: '\f18c';
+    font-size: 84px;
+    line-height: 100px;
+}
+.preview_image div:before {
+    color: orange;
+    font-family: record;
+    width: 84px;
+    height: 53px;
+    vertical-align: middle;
+
+    line-height: 94px;
+    text-align: center;
+    text-align: -webkit-center;
+}
