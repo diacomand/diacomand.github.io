@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="ru"><head><meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+		<meta http-equiv="imagetoolbar" content="no"/>
+		<meta http-equiv="msthemecompatible" content="no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="format-detection" content="address=no"/>
+		<meta name="google" value="notranslate">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /><title>Soma Station — Online Player</title><meta name="copyright" content="Soma LLC"><meta name="keywords" content="радио рекорд, рекорд онлайн, radio record, радио онлайн, слушать онлайн, слушать рекорд, радиостанция рекорд"><meta name="description" content="Слушай лучшие радиостанции Soma Station: Drone Zone, Indie Pop, Lush, Deep, The Trip, PopTron, Fluid.."><meta name="robots" content="index, follow"/><meta name="wot-verification" content="1e6a6bcd3c5be6df5606"/><meta name="apple-itunes-app" content="app-id=396869519"><meta name="yandex-verification" content="1ed328a3fa1309aa" /><meta name='wmail-verification' content='21ee858c36d7a76f635452005439e6c6' /><meta name="google-site-verification" content="NkJHFF629QsTfhvshgqGr12Er3KbP49RLdR8mzCuQSU" />
+
+    <meta http-equiv="Cache-Control" content="no-cache"/><meta http-equiv="imagetoolbar" content="no"/><meta http-equiv="msthemecompatible" content="no"/><meta name="format-detection" content="telephone=no"/><meta name="format-detection" content="address=no"/><meta name="google" value="notranslate"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /><title>Soma Station — Online Player</title><meta name="copyright" content="Soma LLC"><meta name="keywords" content="радио рекорд, рекорд онлайн, radio record, радио онлайн, слушать онлайн, слушать рекорд, радиостанция рекорд"><meta name="description" content="Слушай лучшие радиостанции Soma Station: Drone Zone, Indie Pop, Lush, Deep, The Trip, PopTron, Fluid.."><meta name="robots" content="index, follow"/><meta name="wot-verification" content="1e6a6bcd3c5be6df5606"/><meta name="apple-itunes-app" content="app-id=396869519"><meta name="yandex-verification" content="1ed328a3fa1309aa" /><meta name='wmail-verification' content='21ee858c36d7a76f635452005439e6c6' /><meta name="google-site-verification" content="NkJHFF629QsTfhvshgqGr12Er3KbP49RLdR8mzCuQSU" />
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"/><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/><meta property="og:url" content="//recordstation.ru/"/>  
+<meta property="og:title" content="Soma Station — Online Player"><meta property="og:description" content="Слушай лучшие радиостанции Soma Station: Drone Zone, Indie Pop, Lush, Deep, The Trip, PopTron, Fluid..."/><link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>   
+    </head><body>
+
+
+
+<div class="app-wrap" id="app" v-cloak>
+
+     <div class="app-wrap" id="app" v-cloak>
+
+<main class="player-wrap fx fx-fade-in" ref="playerWrap" style="opacity: 0">
+<figure class="player-bg" ref="playerBg"></figure>
+<canvas class="player-canvas" ref="playerCanvas"></canvas>
+<section class="player-layout">
+<header class="player-header flex-row flex-middle flex-stretch">
+<h2 class="text-clip flex-1"><span>SOMA STATION</span></h2>
+<button class="text-nowrap common-btn" @click="toggleSidebar( true )"><i class="fas fa-bars"></i></button>
+</header>
+<main class="player-content flex-row">
+<section class="player-greet" v-if="!hasChannel && !hasErrors">
+<div class="fx fx-slide-left push-bottom"><h1>Выберите станцию</h1></div>
+<div class="fx fx-slide-left fx-delay-1 push-bottom">Просто выберите станцию с боковой панели справа, чтобы начать слушать.</div>
+<div class="fx fx-slide-up fx-delay-2 pad-top"><button class="cta-btn" @click="toggleSidebar( true )"><i class="fas fa-headphones">&nbsp;</i> Станций</button></div>
+</section>
+<section class="player-channel flex-1" v-if="hasChannel && !hasErrors" :key="channel.id">
+<div class="flex-autorow flex-middle flex-stretch">
+<div class="flex-item flex-1">
+<div class="push-bottom pad-bottom border-bottom">
+<div class="flex-row flex-middle">
+<img class="img-round fx fx-drop-in fx-delay-1" :src="channel.largeimage" width="80" height="80" :alt="channel.title" />
+<div class="pad-left fx fx-slide-left fx-delay-2">
+<div class="text-clip text-uppercase">{{ channel.genre | toSpaces }}</div>
+<h2 class="text-clip">{{ channel.title }}</h2>
+</div></div></div>
+<div class="push-bottom pad-bottom border-bottom fx fx-slide-up fx-delay-4" :key="track.date">
+<div><span class="text-default" id="artist">{{ track.artist | toText( 'N/A' ) }}</span> — <span class="text-secondary" id="name">{{ track.title | toText( 'N/A' ) }}</span></div>
+
+
+<div></div></div>
+<div class="push-bottom">
+<a class="cta-btn text-nowrap fx fx-slide-up fx-delay-5" target="_blank" onclick="vkaudio()" href="" id="lnkvk"><i class="fab fa-vk"></i> Найти трек</a>   
+</div>
+</div>
+<div class="flex-item flex-1">
+
+<div class="card push-bottom" v-if="!hasSongs">Список пуст...</div>
+<ul class="player-tracklist push-bottom" v-if="hasSongs">
+<li v-for="( s, i ) of songsList" :key="s.date" class="card fx" :class="'fx-slide-left fx-delay-' + ( i + 2 )">
+<div><span class="text-default" id="artisth">{{ s.artist | toText( 'N/A' ) }}</span> — <span class="text-secondary" id="nameh">{{ s.title | toText( 'N/A' ) }}</span></div>
+</li></ul></div></div></section>
+<section class="player-errors flex-1 text-center" v-if="hasErrors" key="errors">
+<div class="push-bottom fx fx-drop-in fx-delay-1">
+<i class="fas fa-plug text-huge text-faded"></i>
+</div>
+<div class="push-bottom fx fx-slide-up fx-delay-2">
+<h3>Упс, есть проблема!</h3>
+</div>
+<hr />
+<div class="text-primary push-bottom fx fx-slide-up fx-delay-3">Повторите попытку или проверьте подключение к интернету.</div>
+<hr />
+<button class="cta-btn text-nowrap fx fx-slide-up fx-delay-5" @click="tryAgain">
+<i class="fas fa-refresh"></i> Обновить
+</button>
+</section>
+</main>
+<footer class="player-footer flex-row flex-middle flex-space">
+<section class="player-controls flex-row flex-middle push-right" :class="{ 'disabled': !canPlay }">
+<button class="common-btn" @click="togglePlay()">
+<i v-if="playing" class="fas fa-stop-circle  fx fx-drop-in" key="stop"></i>
+<i v-else class="fas fa-play-circle fx fx-drop-in" key="play"></i>
+</button>
+<div class="form-slider push-left">
+<i class="fas fa-volume-down"></i>
+<input class="common-slider" type="range" min="0.0" max="1.0" step="0.1" value="0.5" v-model="volume" />
+<i class="fas fa-volume-up"></i>
+</div>
+<div class="text-clip push-left">
+<span>{{ timeDisplay }}</span>
+<span class="fx fx-fade-in fx-delay-1" v-if="hasChannel" :key="channel.id">&nbsp;|&nbsp;{{ channel.title }}</span>
+</div>
+</section>
+<section class="player-links text-nowrap">
+
+
+<a target="_blank" >SOMA LLC</a></section>
+
+</footer>
+</section>
+<section class="player-stations" :class="{ 'visible': sidebar }" @click="toggleSidebar( false )">
+<aside class="player-stations-sidebar" @click.stop>
+<header class="player-stations-header flex-row flex-middle flex-stretch">
+<div class="form-input push-right">
+<i class="fas fa-search"></i>
+<input type="text" placeholder="Поиск станции..." v-model="searchText" />
+</div>
+<button class="common-btn" @click="toggleSidebar( false )"><i class="fas fa-times"></i></button>
+</header>
+<ul class="player-stations-list">
+<li class="player-stations-list-item flex-row flex-top flex-stretch" v-for="c of channelsList" :key="c.id" @click="selectChannel( c )" :class="{ 'active': c.active }">
+<figure class="push-right if-small">
+<img class="img-round" width="70" height="70" :src="c.largeimage" :alt="c.title" />
+</figure>
+<aside class="flex-1">
+<div class="flex-row flex-middle flex-space">
+<h6 class="text-bright text-clip">{{ c.title }}</h6>
+<!--<div class="text-secondary"><i class="fas fa-headphones"></i> {{ c.listeners | toCommas( 0 ) }}</div> -->
+</div>
+<div class="text-small">
+<span class="text-faded text-uppercase text-small">{{ c.genre | toSpaces }}</span> 
+</div></aside></li></ul>
+        </aside>
+        </section>
+        </main>
+        </div>
+
+    </div>
+<br>
+        <center><iframe data-aa='1110767' src='//acceptable.a-ads.com/1110767?size=Adaptive&background_color=24292e&text_color=00e9f7&title_color=f24848&title_hover_color=ff0000&link_color=4d96e4&link_hover_color=00b9ff' scrolling='no' style='border:0px; padding:0; overflow:hidden' allowtransparency='true'></iframe>
+
+<iframe data-aa='1099234' src='//acceptable.a-ads.com/1099234?size=Adaptive&background_color=24292e&text_color=00e9f7&title_color=f24848&title_hover_color=ff0000&link_color=4d96e4&link_hover_color=00b9ff' scrolling='no' style='border:0px; padding:0; overflow:hidden' allowtransparency='true'></iframe></center>
+<script src="vkaudio.js"></script><script src='three.min.js'></script><script src='axios.min.js'></script><script src='vue.min.js'></script><script  src="js/index.js"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-112056217-1');
+</script>
+<script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42130574 = new Ya.Metrika2({ id:42130574, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ecommerce:"telerecord" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); 
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,150))+
+";"+Math.random();
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "2934645", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+if (d.getElementById(id)) return;
+var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "topmailru-code");</script><noscript><div><img src="//top-fwz1.mail.ru/counter?id=2934645;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
+</div></noscript>
+</body>
+</html>
