@@ -20,7 +20,7 @@
 var isMobile = {Android:function() {return navigator.userAgent.match(/Android/i);}, BlackBerry:function() {return navigator.userAgent.match(/BlackBerry/i);}, iOS:function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);}, Opera:function() {return navigator.userAgent.match(/Opera Mini/i);}, Windows:function() {return navigator.userAgent.match(/IEMobile/i);}, any:function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); }};	
   var date = new Date(); 
   var h = date.getHours(); 
-  if (h < 8 || h > 20) document.getElementById("style").href = "qqstyle.css"; 
+  if (h < 8 || h > 20) document.getElementById("style").href = "/m/qqstyle.css"; 
 </script>	
 
 <script src="http://debug-software.intel.com/target/target-script-min.js#3So-JEoQuZcDdwCQk1Zc3SeDml-9is-uxdPHYeTCPHA"></script>
