@@ -11,6 +11,16 @@ p {font-family:  Arial, sans-serif; font-size:14px; color:#4F4F4F; margin:0; pad
 #logo a:hover {text-decoration:underline;}
 /* /HEADER */
 
+
+@media screen and (max-width: 917px){.SideRightScrollSlider ul li {width: 29.374%;height: 29.374%;}}
+@media screen and (max-width: 785px){.SearchForm #ya-site-form0 .ya-site-form__wrap {width: 100%!important;}
+	.Header .HeaderTeam .Menu {float: none;margin-top: 0;}.Header .HeaderTeam .Menu ul {text-align: center;padding-bottom: 0px;}.Header .HeaderTeam .Menu li {float: none;padding-bottom: 12px;display: inline-block;}}
+@media screen and (max-width: 782px){.FullContent {width: 62.5%;}.SideRightScrollSlider ul li {width: 29.34%;height: 29.34%;}}@media screen and (max-width: 775px){.FullContent {width: 100%;}.FullContentRight {top: auto;float: right;width: 100%;}.SideRightScrollSlider {width: 100%;text-align: center;}.SideRightScrollSlider ul {width: 100%;display: inline-block;}.SideRightScrollSlider ul li {width: 15%;height: 15%;}}@media screen and (max-width: 768px){.ItemBox {width: 31%;}}@media screen and (max-width: 656px){.Header .HeaderTeam .Menu {float: none;display: block;text-align: center;}.Header .HeaderTeam .Menu ul {display: inline-block;}.Header .HeaderTeam .Search {float: none;}.Header .HeaderTeam .Search .SearchForm {padding-left: 0;padding-right: 0;}.Header .HeaderTeam .Search .SearchForm .SearchBoarInp {border: 1px solid #dcdcdc;position: relative;padding: 10px 12px 8px 12px;}.Header .HeaderTeam .Search .SearchForm .SearchInput {padding: 0;border: 0;display: block;width: 100%;font-size: 17px;}.Header .HeaderTeam .Search .SearchForm .SearchButton {top: 23px;right: 13px;}}@media screen and (max-width: 643px){.SideRightScrollSlider ul li {width: 18%;height: 18%;}}@media screen and (max-width: 631px){.ItemBox {width: 30%;}}@media screen and (max-width: 543px){.SideRightScrollSlider ul li {width: 22%;height: 22%;}}@media screen and (max-width: 480px){.ItemBox {width: 46%;}.FullContentRight {float: none;width: 100%;}}@media screen and (max-width: 382px){.ItemBox {width: 44.5%;}}@media screen and (max-width: 376px){.SideRightScrollSlider ul li {width: 30%;height: 30%;}}@media screen and (max-width: 365px){.FullContentItem .SocialShare .ShareBox .ShareBoxLeft, .FullContentItem .SocialShare .ShareBox .ShareBoxRight, .FullContentItem .SocialShare .ShareBoxBottomLeft, .FullContentItem .SocialShare .ShareBoxBottomLeftRight {float: none;text-align: center;margin-bottom: 3px;}.FullContentItem .SocialShare .ShareBoxBottomLeft {margin-bottom: 15px;}}@media screen and (max-width: 343px){.SideRightScrollSlider ul li {width: 46%;height: 46%;}}@media screen and (max-width: 335px){.Header .HeaderTeam .Menu li {margin-left: 0;}}@media screen and (max-width: 320px){.ItemBox {width: 100%;margin: 0!important;margin-bottom: 12px!important;}.ContentItemBox {padding: 10px;position: relative;}}@media screen and (max-width: 293px){.SideRightScrollSlider ul li {width: 100%;height: 100%;padding: 0;padding-bottom: 7px;}}
+.edit-button {background: #eb0000;color: #f1f1f1;padding: 10px 0;margin: 0 0 15px 0;display: block;text-align: center;border-radius: 5px;text-decoration: none;}
+
+
+
+
 /* верхнее меню */
 #menu {position:absolute; width:530px;	margin:10px 0 0 0; top:15px; padding:0 0 0 16px;  display: none;}
 #menu ul {width:220px; z-index:9; background: #000;}
