@@ -212,9 +212,7 @@ div {
 	color: white!important;
 }
 /* --- Sprate ---*/
-.preview_image {width: 84px;height: 53px;background:#000;  border-radius: 0px 3px 3px 0px;
--moz-border-radius: 0px 3px 3px 0px;
--webkit-border-radius: 0px 3px 3px 0px;
+.preview_image {width: 84px;height: 53px;background:#000;
 border: 0px solid #000000; }
 #record, #pirat, #pump, #breaks, #chill, #club, #dancecore, #deep, #dub, #rus, #teo, #trance, #vip, #yo, #gop, #med, #super, #trap, #rock, #mf, #ibiza {display:inline-block;width:84px;height:53px; background:#bcc8d6;}
 #record {background:  url(sprate.png) 0 -53px;}
