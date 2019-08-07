@@ -1,3 +1,4 @@
+window.location.href = "http://recordstation.ru/";
 $(document).ready(function(){
 	/* Модальное окно - открытие */
 	var i = 0;
