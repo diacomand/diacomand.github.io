@@ -92,7 +92,11 @@ scrollbar thumb[active="true"]
 	margin: 0;
 }
 html, body {
-	width: 100%;
+
+ width: 1200px;
+ margin: auto;
+
+	
 	height: auto;
 	min-width: 250px;
 	cursor: default;
