@@ -93,8 +93,8 @@ scrollbar thumb[active="true"]
 }
 html, body {
 	 width: 900px;
- margin: auto;
-
+ margin: auto; display: inline-block;
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	height: auto;
 	min-width: 250px;
 	cursor: default;
