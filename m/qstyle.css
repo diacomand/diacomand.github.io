@@ -92,20 +92,19 @@ scrollbar thumb[active="true"]
 	margin: 0;
 }
 html, body {
-	width: 795px; 
+	width: 900px; 
  margin: auto; display: inline-block;
 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	height: auto;
-	min-width: 250px;
+	
 	cursor: default;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	min-width: 350px;
+	min-width: 350px;min-width: 250px;
 	font-size: 100%
 }
 
 body {color: #151414;overflow: auto;padding: 0;margin:0;}
-@media (max-width: 768px) {html, body {width: 100%;}
-@media (max-width: 480px) {html, body {width: 100%;}
+
 
 
 
