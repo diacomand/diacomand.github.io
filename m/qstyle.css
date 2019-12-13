@@ -103,7 +103,13 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	font-size: 100%
 }
 
-body {width: 100%;max-width: 795px;color: #151414;overflow: auto;padding: 0 15px;margin: 0 ;}
+body {width: 100%;max-width: 795px;color: #151414;overflow: auto;padding: 0;margin: 0 ;}
+@media (max-width: 768px) {body {width: 100%;}
+@media (max-width: 480px) {body {width: 100%;}
+
+
+
+
 h1, h2{padding:0;margin:0; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial , Verdana, sans-serif;}
 div, a, i{outline:0  !important;}
 h1{font-size:23px;font-weight:normal;line-height:120%;color:white;}
