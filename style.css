@@ -105,7 +105,7 @@ header label {
   border-radius: 50%;
 }
 header label.close {  
-  background: url("https://image.flaticon.com/icons/png/64/625/premium/625046.png") center/contain no-repeat;
+  background: url("./svgs/128.png") center/contain no-repeat;
      width: 36px;
   height: 36px;
 }
