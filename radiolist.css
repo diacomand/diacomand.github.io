@@ -1,0 +1,265 @@
+.plst {
+	float: right;
+	margin-right: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+}
+.plst:hover {
+	color: white;
+}
+
+
+.radiolist-opt {
+	display: table;
+	width: 100%;
+}
+
+
+
+
+
+
+
+#tu { width: 100%;
+  
+}
+.product-content{
+  float: left;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+.category-radio div {
+	
+	cursor: pointer;
+
+	
+	transition: all .3s;
+}
+.radiolist { margin-bottom: 100px;   background: #1b2834;
+   
+	width: 100%;
+	padding: 0;
+
+	display: table;
+	clear: both;
+}
+.radiolist .radios {
+	margin: 0 auto;
+	width: auto;
+}
+.radiolist .station {
+	width: 10%;
+	min-width: 100px;
+	max-width: 105px;
+	padding-top: 5px;
+	height: 115px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	margin-top: 5px;
+	border-radius: 0px;
+	transition: all .3s;
+}
+.radiolist .station .radiologo {
+	width: 100%;
+	height: 82px;
+	text-align: center;
+	margin: 3px 0 0 0;
+	position: relative;
+	float: left;
+}
+.radiolist .station .radiologo .new {
+	color: white;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 10px;
+	width: 27px;
+	height: 15px;
+	background-color: red;
+	float: right;
+	position: absolute;
+	margin-top: -3px;
+	padding: 1px;
+	right: 0px;
+}
+.radiolist .station .radiologo i {
+	color: #a0a0a0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.radiolist .station .radioname {
+	height: 20px;
+	width: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+	color: #a0a0a0;
+	text-align: center;
+	font-size: 14px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.radiolist .station .radiologo img {
+	margin-top: 13px;
+	width: 55px;
+}
+.radiolist .station .r-name-big {
+	position: absolute;
+	margin-top: 75px;
+	height: 45px;
+}
+.category-radio div:hover:not(.active_station),
+.radiolist .station:hover:not(.active_station) {
+	color: #a0a0a0;
+	transition: all .3s;
+}
+.category-radio div.active_station,
+.radiolist .active_station {
+color: #a0a0a0;
+	transition: all .3s;
+}
+.radiolist .station:hover:not(.active_station) .radioname,
+.radiolist .station:hover:not(.active_station) .radiologo i,
+.radiolist .active_station .radioname,
+.radiolist .active_station .radiologo i,
+.category-radio div:hover:not(.active_station),
+.category-radio div.active_station {
+	color: white;
+	transition: all .3s;
+}
+.search-empty {
+	
+	width: 100%;
+	padding: 100px 0;
+	color: #b3b3b3;
+}
+
+/* ======== Р—РќРђР§РљР ======== */
+i.st-icon {
+	font-size: 84px;
+	margin-top: -19px;
+}
+i.icon-st-rr {
+	font-size: 68px;
+	margin-top: -5px;
+}
+i.icon-st-fut {
+	font-size: 92px;
+	margin-top: -24px;
+}
+i.icon-st-club {
+	font-size: 88px;
+	margin-top: -24px;
+}
+i.icon-st-mix,
+i.icon-st-chil {
+	font-size: 98px;
+	margin-top: -28px;
+}
+i.icon-st-gold {
+	font-size: 68px;
+	margin-top: -8px;
+}
+i.icon-st-ps {
+	font-size: 74px;
+	margin-top: -11px;
+}
+i.icon-st-tm,
+i.icon-st-darkside {
+	font-size: 86px;
+	margin-top: -19px;
+}
+i.icon-st-uplift {
+	font-size: 84px;
+	margin-top: -18px;
+}
+i.icon-st-houseclss {
+	font-size: 86px;
+	margin-top: -18px;
+}
+i.icon-station-edmhits,
+i.icon-st-mini {
+	font-size: 90px;
+	margin-top: -24px;
+}
+i.icon-st-symph,
+i.icon-st-elect {
+	font-size: 68px;
+	margin-top: -8px;
+}
+i.icon-st-symph {
+	padding-left: 8px;
+}
+i.icon-station-dream {
+	font-size: 85px;
+	margin-top: -22px;
+}
+i.icon-st-mf,
+i.icon-st-pump,
+i.icon-st-trap,
+i.icon-st-dub,
+i.icon-st-rus,
+i.icon-st-sd90 {
+	font-size: 82px;
+	margin-top: -19px;
+}
+i.icon-st-ibiza,
+i.icon-st-techno,
+i.icon-st-trop,
+i.icon-station-fbass {
+	font-size: 75px;
+	margin-top: -15px;
+}
+i.icon-st-goa,
+i.icon-st-naft {
+	font-size: 69px;
+	margin-top: -11px;
+}
+i.icon-st-yo {
+	font-size: 60px;
+	margin-top: -5px;
+}
+i.icon-st-brks,
+i.icon-st-vip {
+	font-size: 105px;
+	margin-top: -34px;
+}
+i.icon-st-rave,
+i.icon-st-ansh {
+	font-size: 56px;
+}
+i.icon-st-dc {
+	font-size: 94px;
+	margin-top: -28px;
+}
+i.icon-st-rock,
+i.icon-st-mdl,
+i.icon-st-gop,
+i.icon-st-deep {
+	font-size: 86px;
+	margin-top: -22px;
+}
+i.icon-st-vip {
+	font-size: 105px;
+	margin-top: -34px;
+}
+i.icon-st-rave,
+i.icon-st-ansh,
+i.icon-station-hbass,
+i.icon-station-rmx,
+i.icon-station-gast {
+	margin-top: 0px;
+	font-size: 52px;
+}

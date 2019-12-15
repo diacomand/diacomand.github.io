@@ -1,0 +1,63 @@
+.record-live-btn {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 100;
+	width: 350px;
+	height: 197px;
+	border: 2px solid #ff6600;
+}
+.record-live-btn img {
+	width: 100%;
+	cursor: pointer;
+}
+.record-live-btn i {
+	right: -35px;
+	top: -6px;
+	position: absolute;
+	font-size: 35px;
+	cursor: pointer;
+}
+.record-live-btn i:hover {
+	color: red;
+}
+@media screen and (max-height: 880px) {
+	.record-live-btn {
+		bottom: 25px;
+		right: 25px;
+		z-index: 1000;
+		width: 200px;
+		height: 113px;
+		border: 2px solid #ff6600;
+	}
+	.record-live-btn i {
+		right: -22px;
+		top: -5px;
+		font-size: 24px;
+	}
+}
+.record-live-player {
+	display: none;
+}
+.record-live-player .overlay {
+	background: rgba(0,0,0,0.7);
+}
+.record-live-player .visible {
+	top: 50%;
+	left: 50%;
+	margin-top: -280px;
+	margin-left: -497px;
+	width: 995px;
+	height: 560px;
+}
+.record-live-player i {
+	color: red;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -280px;
+	margin-left: 514px;
+	z-index: 1100;
+	font-size: 36px;
+}

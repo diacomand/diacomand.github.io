@@ -1,0 +1,100 @@
+.player-settings-window .visible {
+	top: 50%;
+	left: 50%;
+	margin-top: -165px;
+	margin-left: -300px;
+	width: 600px;
+	height: 250px;
+}
+.player-settings-window .ps-name {
+	width: 100%;
+	background-color: #323232;
+	padding: 10px 20px;
+	font-size: 24px;
+}
+.player-settings-window .ps-second-name {
+	margin-top: 25px;
+	display: block;
+}
+.player-settings-window .player-settings-close {
+	color: red;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -120px;
+	margin-left: 264px;
+	z-index: 1100;
+	font-size: 36px;
+}
+.player-settings-window .player-settings-close:hover {
+	opacity: 0.8;
+}
+.player-settings-window .ps-section {
+	padding: 30px 0 0 40px;
+}
+.player-settings-window .ps-section label {
+	cursor: pointer;
+	position: relative;
+	margin-left: 24px;
+}
+.player-settings-window .ps-section label input[type="checkbox"] {
+	display: none;
+}
+.player-settings-window .ps-section label .checkbox {
+	position: absolute;
+	left: -24px;
+	width: 16px;
+	height: 16px;
+
+	border: 1px solid white;
+}
+.player-settings-window .ps-section label input[name="saveRadioSettings"]:checked + .checkbox_volume,
+.player-settings-window .ps-section label input[name="replaceSPB"]:checked + .checkbox_spb {
+	background: #ff6600 url('/Content/Images/Site/checkbox.png') no-repeat center center;
+	animation: onCheck 0.4s ease-in-out;
+	border: none;
+	width: 18px;
+	height: 18px;
+}
+@keyframes onCheck {
+	0% { transform: scale(0.8) }
+	70% { transform: scale(1.2) }
+	100% { transform: scale(1) }
+}
+.player-settings-window .ps-section .radio-set {
+	margin-top: 15px;
+	display: table;
+}
+.player-settings-window .ps-section .radio-set .bitrate-btn {
+	padding: 6px 9px;
+	cursor: pointer;
+	margin: 0px;
+	color: #b3b3b3;
+
+	background-color: #2e2e2e;
+	display: inline;
+	margin: 1px;
+	transition: all .3s;
+}
+.player-settings-window .ps-section .radio-set .bitrate-btn:last-child {
+	margin-right: 0;
+}
+.player-settings-window .ps-section .radio-set .bitrate-btn:hover:not(.active) {
+	color: white;
+	background-color: #4e4e4e;
+}
+.player-settings-window .ps-section .radio-set .active {
+	color: white;
+	background-color: #ff6600;
+	transition: all .3s;
+}
+.player-settings-window .ps-section .region-notify {
+	color: gray;
+	font-size: 14px;
+	margin-top: 15px;
+}
+.player-settings-window .ps-section .spb-main {
+	display: block;
+	margin-top: 30px;
+}

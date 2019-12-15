@@ -1,0 +1,110 @@
+.scheduler table {
+	width: 1100px;
+	font-size: 15px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	position: relative;
+	z-index: 3;
+	color: white;
+	margin: 15px auto;
+}
+.scheduler table tr {
+	text-align: center;
+	border: 1px #b1b1b1 solid;
+}
+.scheduler table tr td {
+	width: 148px;
+	border: 1px #b1b1b1 solid;
+	height: 40px;
+	line-height: 19px;
+	z-index: 2;
+}
+.scheduler table tr td:hover {
+	opacity: 0.91;
+	z-index: 2;
+}
+.scheduler table tr.day td:hover, .scheduler table tr td.time:hover {
+	opacity: 1!important;
+}
+.scheduler table tr.day td {
+	border-top: none; 
+}
+.scheduler table tr.day {
+	text-transform: uppercase;
+}
+.scheduler table tr td.time {
+	text-align: right;
+	vertical-align: top;
+	width: 30px;
+	height: 40px;
+	padding-left: 4px;
+	padding-top: 2px;
+	padding-right: 4px;
+	border: none;
+	line-height: 33px;
+	color: white;
+}
+.scheduler table tr td.time hr {
+	margin-top: 8px;
+	width: 1050px;
+	color: white;
+	position: absolute;
+	z-index: -1;
+	border-bottom: none;
+}
+@-moz-document url-prefix() {
+	.scheduler table tr td.time hr {
+		display: none;
+	}
+	.scheduler table tr td:hover {
+		opacity: 1;
+	}
+}
+.scheduler table tr td.morning {
+	background-color: chocolate;
+	color: white;
+}
+.scheduler table tr td.day {
+	background-color: darkgreen;
+	color: white;
+}
+.scheduler table tr td.kih {
+	background-color: darkred;
+	color: white;
+}
+.scheduler table tr td.megamix {
+	background-color: darkslateblue;
+	color: white;
+}
+.scheduler table tr td.super {
+	background-color: darkcyan;
+	color: white;
+}
+.scheduler table tr td.mix {
+	background-color: dimgray;
+	color: white;
+}
+.scheduler table tr td.weekend {
+	background-color: midnightblue;
+	color: white;
+}
+.scheduler table tr td.club {
+	background-color: indigo;
+	color: white;
+}
+.scheduler table tr td.hib {
+	background-color: steelblue;
+	color: white;
+}
+.scheduler table tr td.regmorning {
+	background-color: darkgoldenrod;
+	color: white;
+}
+.scheduler table tr td.live {
+	background-color: mediumslateblue;
+	color: white;
+}
+.scheduler table tr td.unknow {
+	background-color: #222222;
+	color: white;
+}
