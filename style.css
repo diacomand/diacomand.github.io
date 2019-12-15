@@ -300,7 +300,7 @@ header .slider {
     width: calc(50vw - 100px);
   }
 }
-@media (max-width: 767px) {.background-sector, .block-content {display: none;}
+@media (max-width: 767px) {.background-sector, .player-sector {display: none;}
   .side-menu.active ~ header .menu {
     margin: 12px;
     width: 40px;
@@ -321,7 +321,7 @@ header .slider {
     flex-basis: 165px;
   }
 }
-@media (max-width: 599px) { .background-sector, .block-content {display: none;}
+@media (max-width: 599px) { .background-sector, .player-sector {display: none;}
   .desktop-only {
     display: none;
   }
@@ -350,7 +350,7 @@ header .slider {
   }
 }
 @media (max-width: 480px) {
-    .background-sector, .block-content {display: none;}
+    .background-sector, .player-sector {display: none;}
   .card {
     flex-basis: 140px;
   }
