@@ -105,7 +105,9 @@ header label {
   border-radius: 50%;
 }
 header label.close {  
-  background: url(./svgs/2210.png) center/contain no-repeat;
+  background: url("./svgs/2210.png") center/contain no-repeat;
+     width: 36px;
+  height: 36px;
 }
 header label {
   margin-left: auto;
