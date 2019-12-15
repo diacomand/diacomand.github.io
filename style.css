@@ -295,7 +295,7 @@ header .slider {
   font-size: 16px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) {.background-sector, .player-sector {display: none;}
   .side-menu.active ~ header input {
     width: calc(50vw - 100px);
   }
