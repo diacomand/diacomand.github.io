@@ -101,12 +101,11 @@ header input:focus, header input:active {
 header label {
   width: 36px;
   height: 36px;
-  background: url(./svgs/regular/search.svg) center no-repeat;
+  background: url(https://image.flaticon.com/icons/png/512/149/149192.png) center no-repeat;
   border-radius: 50%;
 }
-header label.close {  width: 36px;
-  height: 36px; border-radius: 0;
-  background: url(./svgs/regular/error.svg) center no-repeat;
+header label.close {  
+  background: url(./svgs/2210.png) center no-repeat;
 }
 header label {
   margin-left: auto;
@@ -114,7 +113,7 @@ header label {
 header .profile {
   width: 36px;
   height: 36px;
-  background: url("./svgs/regular/share.svg") center/contain no-repeat;
+  background: url(https://image.flaticon.com/icons/png/512/149/149178.png) center/contain no-repeat;
   border-radius: 50%;
   margin: 0 15px;
 }
@@ -177,18 +176,17 @@ header .slider {
   width: 0px;
   margin: 12px 8px;
 }
-.side-menu .menu-holder {
+.side-menu .menu-holder { 
   display: flex;
   align-items: center;
 }
 .side-menu .menu-holder span {
   color: #FF5722;
 }
-.side-menu .menu {border-radius: 0;
-  background: url(./svgs/solid/times.svg) center no-repeat;
+.side-menu .menu {background:  url(./svgs/solid/menu.svg) center no-repeat;
 }
 .side-menu .menu:hover {
-  background-color: #EEE;
+  background-color: #FF5722;
 }
 .side-menu div #tu {
   list-style: none;
