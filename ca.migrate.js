@@ -15,24 +15,24 @@ if (ca_bitrate_Migrate != undefined) {
 	var ca_lastStation_Migrate = getCookie_Migrate('srm_lastStation');
 	var ca_lastVolume_Migrate = getCookie_Migrate('srm_lastVolume');
 	if (ca_bitrate_Migrate != undefined) {
-		document.cookie = "ca_bitrate=" + ca_bitrate_Migrate + ";path=/;domain=record-russia.ru; secure; expires=" + cookieDate_Migrate;
+		document.cookie = "ca_bitrate=" + ca_bitrate_Migrate + ";path=/;domain=recordstation.ru; secure; expires=" + cookieDate_Migrate;
 	}
 	if (ca_saveRadioSettings_Migrate != undefined) {
-		document.cookie = "ca_saveRadioSettings=" + ca_saveRadioSettings_Migrate + ";path=/;domain=record-russia.ru; secure; expires=" + cookieDate_Migrate;
+		document.cookie = "ca_saveRadioSettings=" + ca_saveRadioSettings_Migrate + ";path=/;domain=recordstation.ru; secure; expires=" + cookieDate_Migrate;
 	}
 	if (ca_spb_Migrate != undefined) {
-		document.cookie = "ca_spb=" + ca_spb_Migrate + ";path=/;domain=record-russia.ru; secure; expires=" + cookieDate_Migrate;
+		document.cookie = "ca_spb=" + ca_spb_Migrate + ";path=/;domain=recordstation.ru; secure; expires=" + cookieDate_Migrate;
 	}
 	if (ca_lastStation_Migrate != undefined) {
-		document.cookie = "ca_lastStation=" + ca_lastStation_Migrate + ";path=/;domain=record-russia.ru; secure; expires=" + cookieDate_Migrate;
+		document.cookie = "ca_lastStation=" + ca_lastStation_Migrate + ";path=/;domain=recordstation.ru; secure; expires=" + cookieDate_Migrate;
 	}
 	if (ca_lastVolume_Migrate !== undefined) {
-		document.cookie = "ca_lastVolume=" + ca_lastVolume_Migrate + ";path=/;domain=record-russia.ru; secure; expires=" + cookieDate_Migrate;
+		document.cookie = "ca_lastVolume=" + ca_lastVolume_Migrate + ";path=/;domain=recordstation.ru; secure; expires=" + cookieDate_Migrate;
 	}
-	document.cookie = "srm_bitrate=null;path=/;domain=record-russia.ru; secure; expires=Thu, 01 Jan 1970 00:00:01 GMT";
-	document.cookie = "srm_saveRadioSettings=null;path=/;domain=record-russia.ru; secure; expires=Thu, 01 Jan 1970 00:00:01 GMT";
-	document.cookie = "srm_SPB=null;path=/;domain=record-russia.ru; secure; expires=Thu, 01 Jan 1970 00:00:01 GMT";
-	document.cookie = "srm_lastStation=null;path=/;domain=record-russia.ru; secure; expires=Thu, 01 Jan 1970 00:00:01 GMT";
-	document.cookie = "srm_lastVolume=null;path=/;domain=record-russia.ru; secure; expires=Thu, 01 Jan 1970 00:00:01 GMT";
+	document.cookie = "srm_bitrate=null;path=/;domain=recordstation.ru; secure; expires=Thu, 01 Jan 1970 00:00:01 GMT";
+	document.cookie = "srm_saveRadioSettings=null;path=/;domain=recordstation.ru; secure; expires=Thu, 01 Jan 1970 00:00:01 GMT";
+	document.cookie = "srm_SPB=null;path=/;domain=recordstation.ru; secure; expires=Thu, 01 Jan 1970 00:00:01 GMT";
+	document.cookie = "srm_lastStation=null;path=/;domain=recordstation.ru; secure; expires=Thu, 01 Jan 1970 00:00:01 GMT";
+	document.cookie = "srm_lastVolume=null;path=/;domain=recordstation.ru; secure; expires=Thu, 01 Jan 1970 00:00:01 GMT";
 	location.reload();
 }
