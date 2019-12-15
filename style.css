@@ -101,7 +101,7 @@ header input:focus, header input:active {
 header label {
   width: 36px;
   height: 36px;
-  background: url("https://image.flaticon.com/icons/png/64/149/149192.png") center/contain no-repeat;
+  background: url("./svgs/sea.png") center/contain no-repeat;
   border-radius: 50%;
 }
 header label.close {  
@@ -115,7 +115,7 @@ header label {
 header .profile {
   width: 36px;
   height: 36px;
-  background: url(https://image.flaticon.com/icons/png/64/149/149178.png) center/contain no-repeat;
+  background: url(./svgs/22108.png) center/contain no-repeat;
   border-radius: 50%;
   margin: 0 15px;
 }
