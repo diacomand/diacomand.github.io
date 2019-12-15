@@ -106,7 +106,7 @@ header label {
 }
 header label.close {  width: 36px;
   height: 36px; border-radius: 0;
-  background: url(./svgs/solid/times.svg) center no-repeat;
+  background: url(./svgs/regular/error.svg) center no-repeat;
 }
 header label {
   margin-left: auto;
