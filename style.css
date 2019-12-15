@@ -66,7 +66,7 @@ header {
   background: #FF5722;
   color: #FFF;
   position: fixed;
-  z-index: 5;
+  z-index: 99999;
 }
 header.shadow {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
@@ -104,7 +104,8 @@ header label {
   background: url(./svgs/regular/search.svg) center no-repeat;
   border-radius: 50%;
 }
-header label.close {
+header label.close {  width: 36px;
+  height: 36px; border-radius: 0;
   background: url(./svgs/solid/times.svg) center no-repeat;
 }
 header label {
@@ -183,7 +184,7 @@ header .slider {
 .side-menu .menu-holder span {
   color: #FF5722;
 }
-.side-menu .menu {
+.side-menu .menu {border-radius: 0;
   background: url(./svgs/solid/times.svg) center no-repeat;
 }
 .side-menu .menu:hover {

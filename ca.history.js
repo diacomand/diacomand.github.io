@@ -56,3 +56,6 @@ function historyRename(st) {
 	if (st == 'ibiza') { chan = "innocence" }
 	if (st == 'elect') { chan = "elec" }
 }
+
+
+
