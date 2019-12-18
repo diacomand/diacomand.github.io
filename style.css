@@ -296,14 +296,14 @@ header .slider {
   font-size: 16px;
 }
 
-@media (max-width: 1000px) {section.player .background-sector, .player-sector, .body {background:none!important ;display: none!important ;margin-top: 0px !important ;} div.radiolist.content {
-      margin-top: -50px!important;}
+@media (max-width: 1000px) {.body {background:none!important ; width: 0px;  margin-top: 0px !important ;}
+    section.player .background-sector, .player-sector {display: none!important ;}
   .side-menu.active ~ header input {
     width: calc(50vw - 100px);
   }
 }
-@media (max-width: 767px) {section.player .background-sector, .player-sector, .body {background:none!important ;display: none!important ;margin-top: 0px !important ;} div.radiolist.content {
-      margin-top: -50px!important;}
+@media (max-width: 767px) {.body {background:none!important ; width: 0px;  margin-top: 0px !important ;}
+    section.player .background-sector, .player-sector {display: none!important ;}
   .side-menu.active ~ header .menu {
     margin: 12px;
     width: 40px;
@@ -324,8 +324,8 @@ header .slider {
     flex-basis: 165px;
   }
 }
-@media (max-width: 599px) { section.player .background-sector, .player-sector, .body {background:none!important ;display: none!important ;margin-top: 0px !important ;} div.radiolist.content {
-      margin-top: -50px!important;}
+@media (max-width: 599px) { .body {background:none!important ; width: 0px;  margin-top: 0px !important ;}
+    section.player .background-sector, .player-sector {display: none!important ;}
   .desktop-only {
     display: none;
   }
@@ -353,10 +353,9 @@ header .slider {
     display: initial;
   }
 }
-@media (max-width: 480px) {div.radiolist.content {
-      margin-top: -50px!important;}
- 
-    section.player .background-sector, .player-sector, .body {background:none!important ;display: none!important ;    margin-top: 0px !important ;}
+@media (max-width: 480px) {
+ .body {background:none!important ; width: 0px;  margin-top: 0px !important ;}
+    section.player .background-sector, .player-sector {display: none!important ;}
   .card {
     flex-basis: 140px;
   }
