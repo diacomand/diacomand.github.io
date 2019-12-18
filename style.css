@@ -355,20 +355,14 @@ header .slider {
 }
 @media (max-width: 480px) {
   .radios {
-    padding: 13px 0px 10px 10px!important;
+    padding: 13px 0px 10px 50px!important;
 }
-  .content {
-    width: 100%!important;
-    
-}.radiolist .station{
-   
-    min-width: 120px!important;
-  }
+
 .radiolist .station .radiologo {
     height: 85px!important;
   }section.player {
     height: 1px!important ;
-  }    section.player .background-sector, .player-sector {display: none!important ;}
+  }    section.player .background-sector, .player-sector, .block-content {display: none!important ;}
   .card {
     flex-basis: 140px;
   }
