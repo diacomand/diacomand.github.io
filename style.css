@@ -296,12 +296,12 @@ header .slider {
   font-size: 16px;
 }
 
-@media (max-width: 1000px) {section.player .background-sector, .player-sector {display: none!important ;}
+@media (max-width: 1000px) {section.player .background-sector, .player-sector {display: none!important ;} .radiolist{margin-bottom: 65px;}
   .side-menu.active ~ header input {
     width: calc(50vw - 100px);
   }
 }
-@media (max-width: 767px) {section.player .background-sector, .player-sector {display: none!important ;}
+@media (max-width: 767px) {section.player .background-sector, .player-sector {display: none!important ;} .radiolist{margin-bottom: 65px;}
   .side-menu.active ~ header .menu {
     margin: 12px;
     width: 40px;
@@ -322,7 +322,7 @@ header .slider {
     flex-basis: 165px;
   }
 }
-@media (max-width: 599px) { section.player .background-sector, .player-sector {display: none!important ;}
+@media (max-width: 599px) { section.player .background-sector, .player-sector {display: none!important ;}.radiolist{margin-bottom: 65px;}
   .desktop-only {
     display: none;
   }
@@ -350,7 +350,7 @@ header .slider {
     display: initial;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 480px) {.radiolist{margin-bottom: 65px;}
     section.player .background-sector, .player-sector {display: none!important ;}
   .card {
     flex-basis: 140px;
