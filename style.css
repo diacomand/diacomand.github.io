@@ -355,7 +355,7 @@ header .slider {
 }
 @media (max-width: 480px) {
   .radios {
-    padding: 13px 0px 10px 50px!important;
+    padding: 13px 0px 10px 45px!important;
 }
 
 .radiolist .station .radiologo {
