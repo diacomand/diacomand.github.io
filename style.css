@@ -297,13 +297,13 @@ header .slider {
 }
 
 @media (max-width: 1000px) {
-    section.player .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
+    .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
   .side-menu.active ~ header input {
     width: calc(50vw - 100px);
   }
 }
 @media (max-width: 767px) {
-    section.player .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
+    .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
   .side-menu.active ~ header .menu {
     margin: 12px;
     width: 40px;
@@ -325,7 +325,7 @@ header .slider {
   }
 }
 @media (max-width: 599px) { 
-    section.player .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
+    .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
   .desktop-only {
     display: none;
   }
@@ -361,8 +361,8 @@ header .slider {
     width: 100%!important;
     
 }.radiolist .station{
-    width: 20%!important;
-    min-width: 120px!important;
+    width: 50%!important;
+    min-width: 130px!important;
   }
 .radiolist .station .radiologo {
     width: 100%;
