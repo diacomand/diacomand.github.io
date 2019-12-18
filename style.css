@@ -361,14 +361,12 @@ header .slider {
     width: 100%!important;
     
 }.radiolist .station{
-    width: 50%!important;
+    width: 10%!important;
     min-width: 130px!important;
   }
 .radiolist .station .radiologo {
-    width: 100%;
     height: 85px!important;
   }section.player {
-  
     height: 1px!important ;
   }    section.player .background-sector, .player-sector {display: none!important ;}
   .card {
