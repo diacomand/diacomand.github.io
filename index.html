@@ -3,6 +3,11 @@
 <head>
 <title>Радио Рекорд | Radio Record — Online player</title>   
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script>
+var timestamp = Math.round(new Date().getTime() / 1000); 
+var servuser = 1576292707 - timestamp; 
+var ya_sector = false;
+</script>
 <meta http-equiv="cleartype" content="on">
 <meta name="keywords" content="радио рекорд, рекорд онлайн, radio record, радио онлайн, слушать онлайн, слушать рекорд, радиостанция рекорд"><meta name="description" content="Слушай более 70 радиостанций радио Record: Breaks, Deep, Dancecore,Trap, Club House, Маятник Фуко, Hard Bass, Russsian Mix.. "><meta name="robots" content="index, follow"/><meta name="wot-verification" content="1e6a6bcd3c5be6df5606"/><meta name="yandex-verification" content="1ed328a3fa1309aa" /><meta name='wmail-verification' content='21ee858c36d7a76f635452005439e6c6' /><meta name="google-site-verification" content="NkJHFF629QsTfhvshgqGr12Er3KbP49RLdR8mzCuQSU" />
 <link rel="icon" href="favicon.ico" type="image/x-icon"/><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/><meta property="og:url" content="//recordstation.ru/"/>  
@@ -19,11 +24,8 @@
 <meta http-equiv="cleartype" content="on">
 <link rel="canonical" href="http://recordstation.ru/"/>    
 <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./styl.css"><link rel="stylesheet" href="./style.css"><link href="./css/all.css" rel="stylesheet"><script src="./js/all.js"></script><link rel="stylesheet" type="text/css" href="site.css"><link rel="stylesheet" type="text/css" href="schedule.css"><link rel="stylesheet" type="text/css" href="radiolist.css"><link rel="stylesheet" type="text/css" href="record.css"><link rel="stylesheet" type="text/css" href="player_settings.css">
-<script>
-var timestamp = Math.round(new Date().getTime() / 1000); 
-var servuser = 1576292707 - timestamp; 
-var ya_sector = false;
-</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>    
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
  </head>
 <body class="loading-page">
 <!-- ================= Весь код от css до js принадлежит record-russia.ru ================= -->
@@ -204,8 +206,7 @@ var ya_sector = false;
 </div>
 <div class="right"></div>
 </section><audio src="" autoplay style="display: none;" id="recordplayer" controls></audio>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>     
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script><script src="ca.migrate.js"></script><script src="ca.radiorecord.player.js"></script><script src="ca.trackinfo.internet.js"></script><script src="ca.history.js"></script>
+  <script  src="./script.js"></script><script src="ca.migrate.js"></script><script src="ca.radiorecord.player.js"></script><script src="ca.trackinfo.internet.js"></script><script src="ca.history.js"></script>
 
 <!-- partial -->
 <script>
