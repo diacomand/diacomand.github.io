@@ -354,7 +354,14 @@ header .slider {
   }
 }
 @media (max-width: 480px) {
-section.player {
+  .radios {
+    padding: 0px 0px 0px 10px!important;
+}
+  
+.radiolist .station .radiologo {
+    width: 100%;
+    height: 100px!important;
+  }section.player {
   
     height: 1px!important ;
   }    section.player .background-sector, .player-sector {display: none!important ;}
