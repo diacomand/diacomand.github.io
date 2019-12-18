@@ -100,7 +100,7 @@ $('.station').click(function() {
 				break;
 			case 'region':
 				if (st == 'rr') $('.namestation').text('Radio Record');
-				if (bt == 320) { radio.src = 'https://air.radiorecord.ru:8101/rr_high'; }
+				if (bt == 320) { radio.src = 'https://air.radiorecord.ru:8101/rr_320'; }
 				else if (bt == 128) { radio.src = 'https://air.radiorecord.ru:8101/rr_128'; }
 				else { radio.src = 'https://air.radiorecord.ru:8100/rr_'+bt; }
 				if (reserve == true) {
