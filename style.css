@@ -362,7 +362,7 @@ header .slider {
     height: 85px!important;
   }section.player {
     height: 1px!important ;
-  }    section.player .background-sector, .player-sector, .block-content {display: none!important ;}
+  }    section.player .background-sector, .player-sector {display: none!important ;}
   .card {
     flex-basis: 140px;
   }
