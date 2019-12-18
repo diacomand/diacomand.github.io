@@ -361,8 +361,8 @@ header .slider {
     width: 100%!important;
     
 }.radiolist .station{
-    width: 10%!important;
-    min-width: 130px!important;
+   
+    min-width: 120px!important;
   }
 .radiolist .station .radiologo {
     height: 85px!important;
