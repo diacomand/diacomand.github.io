@@ -296,13 +296,15 @@ header .slider {
   font-size: 16px;
 }
 
-@media (max-width: 1000px) {.body {background:none!important ; width: 0px;  margin-top: 0px !important ;}
+@media (max-width: 1000px) {.body {  margin: 0;
+  padding: 0;}
     section.player .background-sector, .player-sector {display: none!important ;}
   .side-menu.active ~ header input {
     width: calc(50vw - 100px);
   }
 }
-@media (max-width: 767px) {.body {background:none!important ; width: 0px;  margin-top: 0px !important ;}
+@media (max-width: 767px) {.body {  margin: 0;
+  padding: 0;}
     section.player .background-sector, .player-sector {display: none!important ;}
   .side-menu.active ~ header .menu {
     margin: 12px;
@@ -324,7 +326,8 @@ header .slider {
     flex-basis: 165px;
   }
 }
-@media (max-width: 599px) { .body {background:none!important ; width: 0px;  margin-top: 0px !important ;}
+@media (max-width: 599px) { .body {    margin: 0;
+  padding: 0;}
     section.player .background-sector, .player-sector {display: none!important ;}
   .desktop-only {
     display: none;
@@ -354,7 +357,8 @@ header .slider {
   }
 }
 @media (max-width: 480px) {
- .body {background:none!important ; width: 0px;  margin-top: 0px !important ;}
+ .body {  margin: 0;
+  padding: 0;}
     section.player .background-sector, .player-sector {display: none!important ;}
   .card {
     flex-basis: 140px;
