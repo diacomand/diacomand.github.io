@@ -297,14 +297,14 @@ header .slider {
 }
 
 @media (max-width: 1000px) {section.player {
-    margin-top: 5px;
+     height: 0px!important ;
     section.player .background-sector, .player-sector {display: none!important ;}
   .side-menu.active ~ header input {
     width: calc(50vw - 100px);
   }
 }
 @media (max-width: 767px) {section.player {
-    margin-top: 5px;
+     height: 0px!important ;
     section.player .background-sector, .player-sector {display: none!important ;}
   .side-menu.active ~ header .menu {
     margin: 12px;
@@ -327,7 +327,7 @@ header .slider {
   }
 }
 @media (max-width: 599px) { section.player {
-  margin-top: 5px;}
+  height: 0px!important ;}
     section.player .background-sector, .player-sector {display: none!important ;}
   .desktop-only {
     display: none;
@@ -358,7 +358,8 @@ header .slider {
 }
 @media (max-width: 480px) {
 section.player {
-    margin-top: 5px;
+  
+    height: 0px!important ;
   }    section.player .background-sector, .player-sector {display: none!important ;}
   .card {
     flex-basis: 140px;
