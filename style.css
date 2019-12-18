@@ -296,13 +296,13 @@ header .slider {
   font-size: 16px;
 }
 
-@media (max-width: 1000px) {section.player .background-sector, .player-sector {display: none!important ;height: opx !important ;} .radiolist content {
+@media (max-width: 1000px) {section.player .background-sector, .player-sector {display: none!important ;height: opx !important ;} div.radiolist.content {
       margin-top: -40px!important;}
   .side-menu.active ~ header input {
     width: calc(50vw - 100px);
   }
 }
-@media (max-width: 767px) {section.player .background-sector, .player-sector {display: none!important ;height: opx !important ;} .radiolist content {
+@media (max-width: 767px) {section.player .background-sector, .player-sector {display: none!important ;height: opx !important ;} div.radiolist.content {
       margin-top: -40px!important;}
   .side-menu.active ~ header .menu {
     margin: 12px;
@@ -324,7 +324,7 @@ header .slider {
     flex-basis: 165px;
   }
 }
-@media (max-width: 599px) { section.player .background-sector, .player-sector {display: none!important ;height: opx !important ;}.radiolist content {
+@media (max-width: 599px) { section.player .background-sector, .player-sector {display: none!important ;height: opx !important ;} div.radiolist.content {
       margin-top: -40px!important;}
   .desktop-only {
     display: none;
@@ -353,7 +353,7 @@ header .slider {
     display: initial;
   }
 }
-@media (max-width: 480px) {.radiolist content {
+@media (max-width: 480px) {div.radiolist.content {
       margin-top: -40px!important;}
     section.player .background-sector, .player-sector {display: none!important ;    height: opx !important ;}
   .card {
