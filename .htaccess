@@ -10,5 +10,5 @@ RewriteCond %{REQUEST_fileNAME} !-d
 RewriteCond %{REQUEST_fileNAME} !-f
 RewriteRule (.*)/$1.html
 ErrorDocument 404 /index.html
-Redirect 301 /tv/ http://recordstation.ru/
-Redirect 301 /st/ http://recordstation.ru/
+Redirect 301 /tv/* http://recordstation.ru/
+Redirect 301 /st/* http://recordstation.ru/
