@@ -10,3 +10,7 @@ Disallow: /
 User-agent: Twitterbot
 Disallow: /redirect/
 Allow: /
+
+Disallow: /st/
+Disallow: /tv/
+Disallow: /uslugi/
