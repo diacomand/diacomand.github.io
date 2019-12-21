@@ -13,4 +13,4 @@ Allow: /
 
 Disallow: /st/
 Disallow: /tv/
-Disallow: /tv/
+Disallow: /radio/
