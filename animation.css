@@ -1,0 +1,13 @@
+// pulse opacity
+@keyframes pulseFade {
+    0% { opacity: 0.7; }
+   50% { opacity: 1.0; }
+  100% { opacity: 0.7; }
+}
+.fx-pulse {
+  opacity: 0.7;
+  animation-name: pulseFade;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
