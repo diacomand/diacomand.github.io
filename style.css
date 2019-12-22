@@ -356,11 +356,12 @@ header .slider {
   }
 }
 @media (max-width: 480px) {
-  .radios {
+  .radios {justify-content: space-around;
     padding: 13px 0px 10px 40px !important;
 }
+.radiolist {justify-content: center;}
 
-.radiolist .station .radiologo {
+.radiolist .station .radiologo {justify-content: center;
     height: 85px!important;
   }section.player {
     height: 1px!important ;
