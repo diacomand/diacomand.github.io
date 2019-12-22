@@ -47,7 +47,8 @@ input {
   display: none;
 }
 
-.ripple {
+.ripple {  
+  font-family: "Roboto", "Helvetica", "sans-serif";
   overflow: hidden;
   position: relative;
   -webkit-transform: translateZ(0);
@@ -151,7 +152,7 @@ header .slider {
 
 .radios {
   justify-content: center;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 10px;
 }
 
 
