@@ -1,12 +1,10 @@
-
 .content {
-	
+	display: flex;
 	width: 92%;
 	margin: 0 auto;
 }
 
 section.info {
-	
 	color: #2d2d2d;
 	font-size: 14px;
 	padding: 15px;
@@ -172,40 +170,8 @@ section.player .radio-sector .title {
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
-section.player .radio-sector .progress-section {
-	margin-top: 22px;
-	height: 15px;
-}
-section.player .radio-sector .progress-cell {
-	height: 15px;
-	width: 100%;
-	display: table-cell;
-}
-section.player .radio-sector .progress-container {
-	width: 100%;
-	background-color: rgba(58, 58, 58, 0.7);
-	display: block;
-	margin-top: 1px;
-	 
-}
-section.player .radio-sector .progress-section .time-start {
-	display: table-cell;
-	height: 15px;
-	padding-right: 7px;
-	vertical-align: top;
-}
-section.player .radio-sector .progress-section .progress {
-	margin-top: 3px;
-	background-color: #ff6600;
-	height: 12px;
-	transition: all .5s;
-	 
-}
-section.player .radio-sector .progress-section .time-end {
-	display: table-cell;
-	padding-left: 7px;
-	vertical-align: top;
-}
+
+
 section.player .radio-sector .other-options {
 	width: 100%;
 	margin-top: 10px
@@ -278,6 +244,6 @@ section.player .pl-btn:hover {
 	overflow: hidden;
 	z-index: 2000;
 	padding: 0px;
-	 
+	
 	box-shadow: 0 0 50px black;
 }
