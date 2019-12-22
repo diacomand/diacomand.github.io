@@ -1,3 +1,13 @@
+// animations on
+.fx {
+  position: relative;
+  animation-direction: normal;
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 // pulse opacity
 @keyframes pulseFade {
     0% { opacity: 0.7; }
