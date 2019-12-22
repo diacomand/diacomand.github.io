@@ -46,14 +46,15 @@
 	
 	transition: all .3s;
 }
-.radiolist { margin-bottom: 100px;   background: #1b2834;
-   
-	width: 100%;
-	padding: 0;
+.radiolist{ display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  min-height: 100vh;
+  width: 100%;}
 
-	display: table;
-	clear: both;
-}
+
 .radiolist .radios {
 	margin: 0 auto;
 	width: auto;
