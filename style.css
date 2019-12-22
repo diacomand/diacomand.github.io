@@ -48,6 +48,7 @@ input {
 }
 
 .ripple {  
+  z-index: 99992;
   font-family: "Roboto", "Helvetica", "sans-serif";
   overflow: hidden;
   position: relative;
@@ -67,7 +68,7 @@ header {
   background: #FF5722;
   color: #FFF;
   position: fixed;
-  z-index: 99999;
+  z-index: 99991;
 }
 header.shadow {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
