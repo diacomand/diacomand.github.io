@@ -1,3 +1,15 @@
+// common
+@import './styl.css';
+@import './css/all.css';
+@import './site.css';
+@import './schedule.css';
+@import './animations.css';
+@import './radiolist.css';
+@import './record.css';
+@import './player_settings.css';
+
+
+// app root
 *,
 :before,
 :after {
