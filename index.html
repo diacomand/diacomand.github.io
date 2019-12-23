@@ -217,7 +217,7 @@ var ya_sector = false;
 </div>
 </div>
 </div>  
-</div>
+</div> 
     
     <style>
 .player-btn{
@@ -227,69 +227,51 @@ var ya_sector = false;
  left: 50%;
  transform: translate(-50%, -50%);
 }
-.pulse,  .controls {
- position: absolute;
- width: 50px;
- height: 50px;
- color: #fff;
- text-align: center;
- border-radius: 50%;
-}
-
-.pulse {
- background: #FF5722;
- position: relative;
- transition: .5s;
+.pulse {text-align: center;
+ margin:100px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ff5722;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(255,87,34, 0.4);
+  animation: pulse 2s infinite;
 }
 .controls {
- font-size: 20px;
+ font-size: 25px;
  line-height: 50px;
 }
 
-.controls i {z-index: 99999; opacity: 1;
- transition: .5s ease-in-out;
+.pulse:hover {
+  animation: none;
 }
 
-
-
-.pulse:before,
-.pulse:after {
- content: '';
- position: absolute;
- border: 1px solid #FF5722;
- left: -20px;
- right: -20px;
- top: -20px;
- bottom: -20px;
- border-radius: 50%;
-animation: pulse 2s infinite;
- opacity: 0;
-}
-.pulse:hover::after {
- animation-delay: .5s;
-}
-
-@keyframes controls {
- 0%, 100% {
-  transform: rotate(-20deg);
- }
- 50% {
-  transform: rotate(21deg);
- }
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255,87,34, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(255,87,34, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,87,34, 0);
+  }
 }
 @keyframes pulse {
- 0% {
-  transform: scale(0.5);
-  opacity: 0;
- }
- 50% {
-  opacity: 1;
- }
- 100% {
-  transform: scale(1.2);
-  opacity: 0;
- }
-}     
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255,87,34, 0.4);
+    box-shadow: 0 0 0 0 rgba(255,87,34, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(255,87,34, 0);
+      box-shadow: 0 0 0 10px rgba(255,87,34, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(255,87,34, 0);
+      box-shadow: 0 0 0 0 rgba(255,87,34, 0);
+  }
+}
 </style>
 <div class="right"></div>
 </section><audio src="" autoplay style="display: none;" id="recordplayer" controls></audio>
