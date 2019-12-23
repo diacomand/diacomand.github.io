@@ -34,6 +34,7 @@ var timestamp = Math.round(new Date().getTime() / 1000);
 var servuser = 1576292707 - timestamp; 
 var ya_sector = false;
 </script> 
+<script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script>  
 <script type="text/javascript" src="./js/all.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>    
 <script type="text/javascript" src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
@@ -48,6 +49,19 @@ var ya_sector = false;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+   
+  
+  function Share() {
+  if (share['podcast'] == 1) {
+    var url = encodeURIComponent('https://vk.com/audios-1959?q= '+encodeURIComponent(share['title']));
+  } else {
+    var url = encodeURIComponent('https://vk.com/search?per_page=200&q='+encodeURIComponent(share['title'])+'&section=audio');
+  }
+  var title = 'Мне понравился трек '+encodeURIComponent(share['title']);
+  var image = share['img_track'];
+    window.open('https://vk.com/share.php?url='+url+'&title='+title+'&image='+img_track+'&noparse=true', '', 'width=650,height=600,top='+((screen.height-600)/2)+',left='+((screen.width-650)/2)+'');
+  };
 
 </script>
     
@@ -89,9 +103,9 @@ var ya_sector = false;
 <ul>
 <li class="ripple search_track" social="vk">Найти трек: <i class="fab fa-vk"></i></li> 
 <li class="ripple search_track" social="scloud">Найти трек: <i class="fab fa-soundcloud"></i></li>
-<!--
-<li class="ripple search_track" social="">Поделиться: <i class="fab fa-vk"></i></li> 
-<li class="ripple search_track" social="">Поделиться: <i class="fab fa-facebook"></i></li>    
+
+<li class="ripple search_track" social=""><a href="#" onclick="Share(); return false;">Поделиться: <i class="fab fa-vk"></i></a></li> 
+<!--<li class="ripple search_track" social="">Поделиться: <i class="fab fa-facebook"></i></li>    
 <li class="ripple search_track" social="">Купить трек: <i class="fas fa-music"></i></li>  -->  
 </ul>
 </div>
