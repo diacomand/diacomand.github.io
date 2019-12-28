@@ -73,9 +73,9 @@ section.player .background-sector {
 	background-size: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	-webkit-filter: blur(30px);
-	-moz-filter: blur(30px);
-	filter: blur(30px);
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	filter: blur(3px);
 	position: absolute;
 	display: block;
 	top: 0;
