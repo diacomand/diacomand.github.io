@@ -102,7 +102,7 @@ $('.station').click(function() {
 				if (st == 'rr') $('.namestation').text('Radio Record');
 				if (bt == 320) { radio.src = 'http://air.radiorecord.ru:805/rr_320'; }
 				else if (bt == 128) { radio.src = 'http://air.radiorecord.ru:805/rr_128'; }
-				else { radio.src = 'https://air.radiorecord.ru:8100/rr_'+bt; }
+				else { radio.src = 'http://air.radiorecord.ru:805/rr_'+bt; }
 				if (reserve == true) {
 					if (bt == 320) { radio.src = 'https://catagent.ddns.net:8100/rr320_reserve'; }
 					else if (bt == 128) { radio.src = 'https://catagent.ddns.net:8100/rr128_reserve'; }
