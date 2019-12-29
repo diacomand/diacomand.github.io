@@ -100,8 +100,8 @@ $('.station').click(function() {
 				break;
 			case 'region':
 				if (st == 'rr') $('.namestation').text('Radio Record');
-				if (bt == 320) { radio.src = 'https://air.radiorecord.ru:8101/rr_320'; }
-				else if (bt == 128) { radio.src = 'https://air.radiorecord.ru:8101/rr_128'; }
+				if (bt == 320) { radio.src = 'http://air.radiorecord.ru:805/rr_320'; }
+				else if (bt == 128) { radio.src = 'http://air.radiorecord.ru:805/rr_128'; }
 				else { radio.src = 'https://air.radiorecord.ru:8100/rr_'+bt; }
 				if (reserve == true) {
 					if (bt == 320) { radio.src = 'https://catagent.ddns.net:8100/rr320_reserve'; }
@@ -114,7 +114,7 @@ $('.station').click(function() {
 				break;
 			case 'spb':
 				$('.namestation').text('Radio Record Санкт-Петербург');
-				radio.src = 'https://air.radiorecord.ru:8101/rr_spb';
+				radio.src = 'http://air.radiorecord.ru:805/rr_spb';
 				if (reserve == true) radio.src = 'https://catagent.ddns.net:8100/rr320_reserve';
 				update_track = setInterval("update_track_internet()", 5000);
 				update_track_internet();
@@ -124,7 +124,7 @@ $('.station').click(function() {
 				else { $('.namestation').text($(this).children('.radioname').text()); }
 				progress_off();
 				//radio.src = 'https://air.radiorecord.ru:805/'+st+'_320';
-				radio.src = 'https://air.radiorecord.ru:8102/'+st+'_'+bt;
+				radio.src = 'http://air.radiorecord.ru:805/'+st+'_'+bt;
 				update_track = setInterval("update_track_internet()", 5000);
 				update_track_internet();
 				break;
@@ -156,8 +156,8 @@ $('.play').click(function start_btn() {
 	btn = '.record-'+st;
 	switch (region) {
 		case 'region':
-			if (bt == 320) { radio.src = 'https://air.radiorecord.ru:8101/rr_high'; }
-			else if (bt == 128) { radio.src = 'https://air.radiorecord.ru:8101/rr_128'; }
+			if (bt == 320) { radio.src = 'http://air.radiorecord.ru:805/rr_high'; }
+			else if (bt == 128) { radio.src = 'http://air.radiorecord.ru:805/rr_128'; }
 			else { radio.src = 'https://air.radiorecord.ru:8100/rr_'+bt; }
 			if (reserve == true) {
 				if (bt == 320) { radio.src = 'https://catagent.ddns.net:8100/rr320_reserve'; }
@@ -166,7 +166,7 @@ $('.play').click(function start_btn() {
 			}
 			break;
 		case 'spb':
-			radio.src = 'https://air.radiorecord.ru:8101/rr_spb';
+			radio.src = 'http://air.radiorecord.ru:805/rr_spb';
 			if (reserve == true) radio.src = 'https://catagent.ddns.net:8100/rr320_reserve';
 			break;
 		case 'regions':
