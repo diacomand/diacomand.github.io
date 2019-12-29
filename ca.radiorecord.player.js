@@ -158,7 +158,7 @@ $('.play').click(function start_btn() {
 		case 'region':
 			if (bt == 320) { radio.src = 'http://air.radiorecord.ru:805/rr_high'; }
 			else if (bt == 128) { radio.src = 'http://air.radiorecord.ru:805/rr_128'; }
-			else { radio.src = 'https://air.radiorecord.ru:8100/rr_'+bt; }
+			else { radio.src = 'http://air.radiorecord.ru:805/rr_'+bt; }
 			if (reserve == true) {
 				if (bt == 320) { radio.src = 'https://catagent.ddns.net:8100/rr320_reserve'; }
 				else if (bt == 128) { radio.src = 'https://catagent.ddns.net:8100/rr128_reserve'; }
@@ -173,7 +173,7 @@ $('.play').click(function start_btn() {
 			radio.src = $(btn).attr("radiourl");
 			break;
 		case 'internet':
-			radio.src = 'https://air.radiorecord.ru:8102/'+st+'_'+bt;
+			radio.src = 'http://air.radiorecord.ru:805/'+st+'_'+bt;
 			break;
 	}
 	$('.radios').children('[st = '+st+']').addClass('active_station');
