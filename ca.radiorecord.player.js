@@ -1,4 +1,4 @@
-// Плеер для полной версии.
+﻿// Плеер для полной версии.
 
 var radio = jQuery("#recordplayer").get(0); // Задаём плеер.
 var st; // Для потока.
@@ -88,7 +88,7 @@ $('.station').click(function() {
 		} else {
 			$('.img_track').html('<i class="icon-station-'+st+'"></i>');
 		}
-		$('.footer_img_track').html('<img src="/content/images/covers/notrack.png">');
+		$('.footer_img_track').html('<img src="notrack.png">');
 		lastimg = "logo"; // Удаляем информацию для обновления обложки
 		clearInterval(update_track); // Убираем обновление трека прошлой станции.
 		switch (region) {
@@ -100,9 +100,9 @@ $('.station').click(function() {
 				break;
 			case 'region':
 				if (st == 'rr') $('.namestation').text('Radio Record');
-				if (bt == 320) { radio.src = 'https://air.radiorecord.ru:8101/rr_320'; }
-				else if (bt == 128) { radio.src = 'https://air.radiorecord.ru:8101/rr_128'; }
-				else { radio.src = 'https://air.radiorecord.ru:8100/rr_'+bt; }
+				if (bt == 320) { radio.src = 'http://air.radiorecord.ru:8101/rr_high'; }
+				else if (bt == 128) { radio.src = 'http://air.radiorecord.ru:8101/rr_128'; }
+				else { radio.src = 'http://air.radiorecord.ru:8100/rr_'+bt; }
 				if (reserve == true) {
 					if (bt == 320) { radio.src = 'https://catagent.ddns.net:8100/rr320_reserve'; }
 					else if (bt == 128) { radio.src = 'https://catagent.ddns.net:8100/rr128_reserve'; }
@@ -114,7 +114,7 @@ $('.station').click(function() {
 				break;
 			case 'spb':
 				$('.namestation').text('Radio Record Санкт-Петербург');
-				radio.src = 'https://air.radiorecord.ru:8101/rr_spb';
+				radio.src = 'http://air.radiorecord.ru:8101/rr_spb';
 				if (reserve == true) radio.src = 'https://catagent.ddns.net:8100/rr320_reserve';
 				update_track = setInterval("update_track_internet()", 5000);
 				update_track_internet();
@@ -123,8 +123,8 @@ $('.station').click(function() {
 				if (st == 'sd90') { $('.namestation').text('Супердискотека 90-х'); }
 				else { $('.namestation').text($(this).children('.radioname').text()); }
 				progress_off();
-				//radio.src = 'https://air.radiorecord.ru:805/'+st+'_320';
-				radio.src = 'https://air.radiorecord.ru:8102/'+st+'_'+bt;
+				//radio.src = 'http://air.radiorecord.ru:805/'+st+'_320';
+				radio.src = 'http://air.radiorecord.ru:8102/'+st+'_'+bt;
 				update_track = setInterval("update_track_internet()", 5000);
 				update_track_internet();
 				break;
@@ -156,9 +156,9 @@ $('.play').click(function start_btn() {
 	btn = '.record-'+st;
 	switch (region) {
 		case 'region':
-			if (bt == 320) { radio.src = 'https://air.radiorecord.ru:8101/rr_high'; }
-			else if (bt == 128) { radio.src = 'https://air.radiorecord.ru:8101/rr_128'; }
-			else { radio.src = 'https://air.radiorecord.ru:8100/rr_'+bt; }
+			if (bt == 320) { radio.src = 'http://air.radiorecord.ru:8101/rr_high'; }
+			else if (bt == 128) { radio.src = 'http://air.radiorecord.ru:8101/rr_128'; }
+			else { radio.src = 'http://air.radiorecord.ru:8100/rr_'+bt; }
 			if (reserve == true) {
 				if (bt == 320) { radio.src = 'https://catagent.ddns.net:8100/rr320_reserve'; }
 				else if (bt == 128) { radio.src = 'https://catagent.ddns.net:8100/rr128_reserve'; }
@@ -166,14 +166,14 @@ $('.play').click(function start_btn() {
 			}
 			break;
 		case 'spb':
-			radio.src = 'https://air.radiorecord.ru:8101/rr_spb';
+			radio.src = 'http://air.radiorecord.ru:8101/rr_spb';
 			if (reserve == true) radio.src = 'https://catagent.ddns.net:8100/rr320_reserve';
 			break;
 		case 'regions':
 			radio.src = $(btn).attr("radiourl");
 			break;
 		case 'internet':
-			radio.src = 'https://air.radiorecord.ru:8102/'+st+'_'+bt;
+			radio.src = 'http://air.radiorecord.ru:8102/'+st+'_'+bt;
 			break;
 	}
 	$('.radios').children('[st = '+st+']').addClass('active_station');

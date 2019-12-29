@@ -19,7 +19,7 @@ function update_track_internet() {
 				$('.radio').children('.title').text(data.title);
 				if (typeof data.image600 === 'undefined' || typeof data.image600 === null || typeof data.image600 === '') {
 					$('.img_track').html('<i class="icon-station-'+st+'"></i>');
-					$('.footer_img_track').html('<img src="album.png">');
+					$('.footer_img_track').html('<img src="/content/images/covers/notrack.png">');
 					$('.player').children('.background-sector').animate({'opacity':'0'},600,function(){
 						$(this).css('background-image','none');
 					});
@@ -89,7 +89,7 @@ function spbinfo() { // Получение информации из Питер�
 		$('.radio').children('.title').text(data.title);
 		if (typeof data.image600 === 'undefined' || typeof data.image600 === null || typeof data.image600 === '' || data.artist === 'Record Dance Radio' || data.artist === 'Record Club') {
 			$('.img_track').html('<i class="icon-st-rr"></i>');
-			$('.footer_img_track').html('<img src="album.png">');
+			$('.footer_img_track').html('<img src="/content/images/covers/notrack.png">');
 			$('.player').children('.background-sector').animate({'opacity':'0'},600,function(){
 				$(this).css('background-image','none');
 			});
