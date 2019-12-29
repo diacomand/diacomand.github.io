@@ -289,7 +289,7 @@ region = 'region';
 		var checkReserve;
 		reserve = false;
 		$.ajaxSetup({cache: false});
-		$.getJSON('/content/system/stream', function (data) {
+		$.getJSON('https://www.record-russia.ru/content/system/stream', function (data) {
 			if (data.stream == false) checkReserve = setInterval("checkStreamFunc()", 10000);
 		});
 
