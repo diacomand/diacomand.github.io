@@ -1,4 +1,4 @@
-﻿// Плеер для полной версии.
+// Плеер для полной версии.
 
 var radio = jQuery("#recordplayer").get(0); // Задаём плеер.
 var st; // Для потока.
@@ -13,29 +13,6 @@ var reserve = true; // Резерв.
 var aezakmi = false;
 var lastVolume = 1;
 
-/* ГРОМКОСТЬ */
-$(".player-volume").on('input', function() {
-	radio.volume = parseFloat(this.value / 10);
-	updatePlayerSettings('ca_lastVolume',radio.volume,'false');
-	if (radio.volume == 0) {
-		$('.fa-volume-up').trigger('click');
-	} else {
-		$('.fa-volume-mute').css('display','none');
-		$('.fa-volume-up').css('display','');
-	}
-	$('.player-volume').val(radio.volume*10);
-});
-$('.fa-volume-up').click(function() {
-	lastVolume = radio.volume;
-	radio.volume = 0;
-	$('.fa-volume-up').css('display','none');
-	$('.fa-volume-mute').css('display','');
-});
-$('.fa-volume-mute').click(function() {
-	radio.volume = lastVolume;
-	$('.fa-volume-mute').css('display','none');
-	$('.fa-volume-up').css('display','');
-});
 
 /* СТОП */
 function stop() {
@@ -88,7 +65,7 @@ $('.station').click(function() {
 		} else {
 			$('.img_track').html('<i class="icon-station-'+st+'"></i>');
 		}
-		$('.footer_img_track').html('<img src="notrack.png">');
+		$('.footer_img_track').html('<img src="/content/images/covers/notrack.png">');
 		lastimg = "logo"; // Удаляем информацию для обновления обложки
 		clearInterval(update_track); // Убираем обновление трека прошлой станции.
 		switch (region) {
