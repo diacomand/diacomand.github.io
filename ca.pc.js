@@ -49,12 +49,12 @@ function aezakmi_start(e) {
 		var aezakmi_poz = Math.random() * 3927;
 		$('.namestation').text("RADIO LOS SANTOS");
 		$('.radio-logo').html('<i class="icon-rr-family-logo"></i>');
-		$('.img_track').html('<img src="ls.jpg">');
+		$('.img_track').html('<img src="/content/images/covers/ls.jpg">');
 		$('.player').children('.background-sector').animate({'opacity':'0'},600,function(){
-			$(this).css('background-image','url("ls.jpg")');
+			$(this).css('background-image','url("/content/images/covers/ls.jpg")');
 			$(this).animate({'opacity':'0.4'},600);
 		});
-		radio.src = "https://www.record-russia.ru/content/media/ls.mp3";
+		radio.src = "/content/media/ls.mp3";
 		radio.currentTime = aezakmi_poz;
 		clearInterval(update_track);
 		update_track = setInterval("aezakmi_info()", 5000);
@@ -109,7 +109,7 @@ function aezakmi_info() {
 /* ВОЗВРАТ С РЕЗЕРВА */
 function checkStreamFunc() {
 	$.ajaxSetup({cache: false});
-	$.getJSON('https://www.record-russia.ru/content/system/stream', function (data) {
+	$.getJSON('/content/system/stream', function (data) {
 		if (data.stream == true) {
 			var playNow = false;
 			var nowRegion = $('.radios').children('.record-rr').attr('region');
@@ -179,7 +179,7 @@ function updatePlayerSettings(nameCookie,valueCookie,removeValue) {
 		case 'false': cookieDate = new Date(new Date().getTime() + 31536000 * 1000).toUTCString(); break;
 		case 'true': cookieDate = "Thu, 01 Jan 1970 00:00:01 GMT"; break;
 	}
-	document.cookie = nameCookie + "=" + valueCookie + ";path=/;domain=recordstation.ru; secure; expires=" + cookieDate;
+	document.cookie = nameCookie + "=" + valueCookie + ";path=/;domain=record-russia.ru; secure; expires=" + cookieDate;
 }
 
 /* ФУНКЦИЯ ЗАПРОСА НАСТРОЕК */
@@ -223,7 +223,7 @@ if (saveRadioSettings == "true") {
 			$('.namestation').text($('[st = '+st+']').children('.radioname').text());
 			$('.img_track').html('<i class="icon-station-'+st+'"></i>');
 			$('.radio-logo').html('<i class="icon-st-'+st+'"></i>');
-			$('.footer_img_track').html('<img src="album.png">');
+			$('.footer_img_track').html('<img src="/content/images/covers/notrack.png">');
 		}
 		switch (region) {
 			case 'regions' :
