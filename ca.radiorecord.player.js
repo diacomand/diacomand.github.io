@@ -11,7 +11,7 @@ var update_track; // Выбор функций обновления.
 var bt; // Выбор битрейта.
 var reserve = true; // Резерв.
 var aezakmi = false;
-var lastVolume = 1;
+var lastVolume = 0.8;
 
 
 /* СТОП */
