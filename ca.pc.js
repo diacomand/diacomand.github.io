@@ -109,7 +109,7 @@ function aezakmi_info() {
 /* ВОЗВРАТ С РЕЗЕРВА */
 function checkStreamFunc() {
 	$.ajaxSetup({cache: false});
-	$.getJSON('/content/system/stream', function (data) {
+	$.getJSON('https://www.record-russia.ru/content/system/stream', function (data) {
 		if (data.stream == true) {
 			var playNow = false;
 			var nowRegion = $('.radios').children('.record-rr').attr('region');
@@ -223,7 +223,7 @@ if (saveRadioSettings == "true") {
 			$('.namestation').text($('[st = '+st+']').children('.radioname').text());
 			$('.img_track').html('<i class="icon-station-'+st+'"></i>');
 			$('.radio-logo').html('<i class="icon-st-'+st+'"></i>');
-			$('.footer_img_track').html('<img src="/content/images/covers/notrack.png">');
+			$('.footer_img_track').html('<img src="album.png">');
 		}
 		switch (region) {
 			case 'regions' :
