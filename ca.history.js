@@ -1,4 +1,4 @@
-﻿// Переключение истории станции.
+// Переключение истории станции.
 
 $('.historylist').children('div').click(function() {
 	var st = $(this).attr("st");
@@ -56,6 +56,3 @@ function historyRename(st) {
 	if (st == 'ibiza') { chan = "innocence" }
 	if (st == 'elect') { chan = "elec" }
 }
-
-
-
