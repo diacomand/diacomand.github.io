@@ -15,10 +15,10 @@
 <meta http-equiv="Cache-Control" content="no-cache"/><meta http-equiv="imagetoolbar" content="no"/><meta http-equiv="msthemecompatible" content="no"/><meta name="format-detection" content="telephone=no"/><meta name="format-detection" content="address=no"/><meta http-equiv="cleartype" content="on"><meta name="google" value="notranslate"><link rel="canonical" href="http://recordstation.ru/"/><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed:700" />
 <link rel="stylesheet" href="css/all.css"><link rel="stylesheet" href="styl.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="record.css"><link rel="stylesheet" href="player_settings.css"><link rel="stylesheet" href="radiolist.css"><link rel="stylesheet" href="schedule.css">
 <script>
-var timestamp = Math.round(new Date().getTime() / 1000); 
-var servuser = 1576292707 - timestamp; 
-var ya_sector = false;
-</script> 
+			var timestamp = Math.round(new Date().getTime() / 1000); // Время пользователя.
+			var servuser = 1578192836 - timestamp; // Разница между пользователем и сервером.
+			var ya_sector = false;
+		</script>
 <script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script><script type="text/javascript" src="./js/all.js"></script><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><script type="text/javascript" src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -58,7 +58,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 <!-- ================= Частично код от css до js принадлежит record russia ================= -->
 <div class="body">
 <section class="player">  
-<div class="background-sector"><canvas id="canvas"></canvas></div>  
+<div class="background-sector"><canvas id="canva"></canvas></div>  
 <div class="player-sector">
 <div class="content">
 <div class="navigation" id="radio"></div>
@@ -292,10 +292,19 @@ canvas {position: absolute;z-index: 1;
   
 <div class="right"></div>
 </section><audio src="" autoplay style="display: none;" id="recordplayer" controls></audio>
-<script  src="script.js"></script><script src="ca.migrate.js"></script><script src="ca.radiorecord.player.js"></script><script src="https://www.record-russia.ru/content/scripts/ca.trackinfo.internet.js"></script><script src="https://www.record-russia.ru/content/scripts/ca.history.js"></script>
-<!-- partial -->
-<script>
-region = 'region';
+<script  src="script.js"></script>
+	
+
+<script src="https://www.record-russia.ru/content/scripts/advert.js"></script>
+		<script src="https://www.record-russia.ru/content/scripts/jquery.min.js"></script>
+		<script src="https://www.record-russia.ru/content/scripts/ca.radiorecord.player.js"></script>
+		<script src="https://www.record-russia.ru/content/scripts/ca.trackinfo.internet.js"></script>
+	
+		
+	<script src="https://www.record-russia.ru/content/scripts/ca.history.js"></script>
+	
+	<script>
+		region = 'region';
 		radioid = 'spb';
 		var checkReserve;
 		reserve = false;
@@ -303,9 +312,9 @@ region = 'region';
 		$.getJSON('https://www.record-russia.ru/content/system/stream', function (data) {
 			if (data.stream == false) checkReserve = setInterval("checkStreamFunc()", 10000);
 		});
+	</script>
 
-</script>
-<script src="ca.pc.js"></script>
+		<script src="https://www.record-russia.ru/content/scripts/ca.pc.js"></script>
     <script type="text/javascript">
 
 
