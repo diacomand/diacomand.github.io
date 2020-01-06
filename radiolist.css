@@ -8,30 +8,15 @@
 .plst:hover {
 	color: white;
 }
-
-
 .radiolist-opt {
 	display: table;
 	width: 100%;
 }
-
-
-
-
-
-
-
 #tu { width: 100%;
-  
-}
+  }
 .product-content{
   float: left;
-  
-}
-
-
-
-
+  }
 .radiolist { margin-bottom: 100px;   background: #1b2834;
     justify-content: center;
 	width: 100%;
@@ -39,21 +24,10 @@
 display: table;
 	clear: both;
 }
-
-
-
-
-
-
 .category-radio div {
-	
 	cursor: pointer;
-
-	
 	transition: all .3s;
 }
-
-
 .radiolist .radios {
 	margin: 0 auto;
 	width: auto;
