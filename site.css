@@ -2,7 +2,6 @@
 	width: 92%;
 	margin: 0 auto;
 }
-
 section.info {
 	color: #2d2d2d;
 	font-size: 14px;
@@ -66,7 +65,6 @@ section.player {margin-top: 65px;
 	overflow: hidden;
 }
 section.playerfooter {margin: 0;
-	
 }
 section.player .background-sector {
 	background-position: center center;
@@ -82,8 +80,7 @@ section.player .background-sector {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	opacity: .4;
-    
+	opacity: .4;  
 }
 section.player .img-section {
 	float: left;
@@ -199,7 +196,6 @@ section.player .radio-sector .search-section i {
 	color: #f94f00;
 	transition: all .3s;
 }
-
 section.player .settings-btn,
 section.player .pl-btn {
 	height: 10px;
@@ -248,7 +244,6 @@ canvas {position: absolute;z-index: 1;
 .pulse:hover {
   animation: none;
 }
-
 @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(255,87,34, 0.4);
@@ -274,7 +269,6 @@ canvas {position: absolute;z-index: 1;
       box-shadow: 0 0 0 0 rgba(255,87,34, 0);
   }
 }
-
 .window-block {
 	position: relative;
 }
