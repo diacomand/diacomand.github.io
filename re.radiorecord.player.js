@@ -11,7 +11,7 @@ var update_track; // Выбор функций обновления.
 var bt; // Выбор битрейта.
 var reserve = true; // Резерв.
 var aezakmi = false;
-var lastVolume = 0.8;
+var lastVolume = 0.9;
 
 
 /* СТОП */
@@ -65,7 +65,7 @@ $('.station').click(function() {
 		} else {
 			$('.img_track').html('<i class="icon-station-'+st+'"></i>');
 		}
-		$('.footer_img_track').html('<img src="/content/images/covers/notrack.png">');
+		$('.footer_img_track').html('<img src="me.jpg">');
 		lastimg = "logo"; // Удаляем информацию для обновления обложки
 		clearInterval(update_track); // Убираем обновление трека прошлой станции.
 		switch (region) {
