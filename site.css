@@ -71,9 +71,9 @@ section.player .background-sector {
 	background-size: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	filter: blur(3px);
+	-webkit-filter: blur(13px);
+	-moz-filter: blur(13px);
+	filter: blur(13px);
 	position: absolute;
 	display: block;
 	top: 0;
@@ -92,12 +92,11 @@ section.player .img_track {border-radius: 100%;
 	color: white;
 	text-align: center;
 	position: relative;
-	box-shadow: inset 0 0 0 0 rgba(200,95,66, 0.4), inset 0 0 0 16px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.1);
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 section.player .img_track i {
 	width: 250px;
@@ -110,8 +109,7 @@ section.player .img_track i {
 section.player .img_track img {border-radius: 100%;
 	width: 100%;
 	height: 100%; border:0;
-	
-	
+
 }
 section.player .radio-sector {
 	float: left;
@@ -133,7 +131,11 @@ section.player .player-btn .controls {
 	text-align: center;
 	background-color: #ff6600;
 	border-radius: 100%;
-	transition: all .3s;
+	  -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 section.player .player-btn .loading-player {
 	cursor: not-allowed;
@@ -195,22 +197,38 @@ section.player .radio-sector .search-section i {
 	margin-left: 10px;
 	line-height: 25px;
 	cursor: pointer;
-	transition: all .3s;
+	  -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .fa-vk {
 	color: #467fbf;
-	transition: all .3s;
+	  -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .fa-soundcloud {
 	color: #f94f00;
-	transition: all .3s;
+	  -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 section.player .settings-btn,
 section.player .pl-btn {
 	height: 10px;
 	float: right;
 	margin: 20px 0 0 20px;
-	transition: all .3s;
+	  -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 section.player .settings-btn i,
 section.player .pl-btn i {
@@ -223,7 +241,11 @@ section.player .settings-btn:hover,
 section.player .pl-btn:hover {
 	opacity: .9;
 	cursor: pointer;
-	transition: all .3s;
+	  -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .logo {
