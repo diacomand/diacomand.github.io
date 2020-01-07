@@ -65,7 +65,7 @@ $('.station').click(function() {
 		} else {
 			$('.img_track').html('<i class="icon-station-'+st+'"></i>');
 		}
-		$('.footer_img_track').html('<img src="me.jpg">');
+		$('.footer_img_track').html('<img src="album.png">');
 		lastimg = "logo"; // Удаляем информацию для обновления обложки
 		clearInterval(update_track); // Убираем обновление трека прошлой станции.
 		switch (region) {
