@@ -211,6 +211,14 @@ section.player .radio-sector .search-section i {
     -ms-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+.fa-facebook {
+	color: #467fbf;
+	  -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
 .fa-soundcloud {
 	color: #f94f00;
 	  -webkit-transition: all .3s ease-in-out;
@@ -320,6 +328,5 @@ canvas {position: absolute;z-index: 1;
 	overflow: hidden;
 	z-index: 2000;
 	padding: 0px;
-	
 	box-shadow: 0 0 50px black;
 }
