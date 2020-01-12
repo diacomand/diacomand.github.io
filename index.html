@@ -222,9 +222,9 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 	display: block;
 	font-size: 25px;
 	font-weight: bold;
-	text-align: center;
+	
 }
-.block-content {
+.block-content1 {
 	display: block;
 	padding: 0;
 	margin: 0;text-align: center;
@@ -233,12 +233,11 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 .playlist .iframe {
 	margin: 0 auto;
 	width: 100%;
-	height: 1720px;
+	height: 1600px;
 }
 .playlist .radiolist {
 	width: 100%;
 	display: table;
-	text-align: center;
 	float: left;
 	margin: 0;
 }
@@ -258,12 +257,12 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 	transition: all .3s;
 }
 .playlist .radiolist div.now_station {
-	border: 1px solid #ff6600;
-	color: #ff6600;
+	border: 1px solid #FF5722;
+	color: #FF5722;
 	box-sizing: border-box;
 }
 .playlist .radiolist div.active_station {
-	background-color: #ff6600;
+	background-color: #FF5722;
 	transition: all .3s;
 }
 .playlist .radiolist div.active_station:hover:not(.active_station),
@@ -283,22 +282,19 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 .playlist iframe {
 	
 	width: 100%;
-	height: 1720px;
+	height: 1600px;
 }
 @-moz-document url-prefix() {
 	.playlist .iframe, .playlist iframe {
 		height: 1720px;
 	}
 }
-.playlist .info {
-	padding: 0px;
-	text-align: center;
-}
+
     </style>
   <div class="playlist"> 
 
 	<div class="block-name">История эфира</div>
-	<div class="block-content">
+	<div class="block-content1">
 		<div class="radiolist historylist">
 			<div class="active_station" st="rr">Radio Record</div>
 			<div st="1970">1970</div>
@@ -418,7 +414,7 @@ radioid = 'spb';
 var checkReserve;
 reserve = false;
 $.ajaxSetup({cache: false});
-$.getJSON('https://www.record-russia.ru/content/system/stream', function (data) {
+$.getJSON('/stream', function (data) {
 if (data.stream == false) checkReserve = setInterval("checkStreamFunc()", 10000);
 });
 </script>
