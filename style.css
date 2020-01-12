@@ -305,7 +305,7 @@ header .slider {
     width: calc(50vw - 100px);
   }
 }
-@media (max-width: 767px) {#canvas {display: none!important ;}
+@media (max-width: 767px) {.playlist {display: none!important ;}
     .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
   .side-menu.active ~ header .menu {
     margin: 12px;

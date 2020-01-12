@@ -89,6 +89,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 </div></div>
 </div>     
 </section>  
+ 
 <div class="radiolist content">
 <div class="block-content">
 <div class="radiolist-opt">
@@ -209,9 +210,173 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 <div class="station record-ansh spec" region="internet" st="ansh"><div class="radiologo"><i class="st-icon icon-st-ansh"></i></div><div class="radioname r-name">Аншлаг FM</div></div>
 <div class="station record-naft rus old spec pop" region="internet" st="naft"><div class="radiologo"><i class="st-icon icon-st-naft"></i></div><div class="radioname r-name">Нафталин FM</div></div>
 <div class="search-empty" style="display:none">ничего не найдено...</div>
-</div>      
-</div>        
+
+    </div>  
 </div>
+
+</div>
+<style>
+    html, body {background-color: #1b2834;}
+.block-name {
+	line-height: 35px;
+	display: block;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+.block-content {
+	display: block;
+	padding: 0;
+	margin: 0;text-align: center;
+	
+}
+.playlist .iframe {
+	margin: 0 auto;
+	width: 100%;
+	height: 1720px;
+}
+.playlist .radiolist {
+	width: 100%;
+	display: table;
+	text-align: center;
+	float: left;
+	margin: 0;
+}
+.playlist .radiolist div {
+	padding: 6px 9px;
+	cursor: pointer;
+	margin: 5px;
+	color: #b3b3b3;
+	border-radius: 3px;
+	background-color: #1b2834;
+	display: inline-block;
+	transition: all .3s;
+	border: 1px solid transparent;
+}
+.playlist .radiolist div:hover:not(.active_station) {
+	background-color: #4e4e4e;
+	transition: all .3s;
+}
+.playlist .radiolist div.now_station {
+	border: 1px solid #ff6600;
+	color: #ff6600;
+	box-sizing: border-box;
+}
+.playlist .radiolist div.active_station {
+	background-color: #ff6600;
+	transition: all .3s;
+}
+.playlist .radiolist div.active_station:hover:not(.active_station),
+.playlist .radiolist div.active_station {
+	color: white;
+	transition: all .3s;
+}
+.playlist .block-content {
+	overflow: hidden;
+}
+
+ .playlist iframe th {
+	
+	color: white;
+}
+
+.playlist iframe {
+	
+	width: 100%;
+	height: 1720px;
+}
+@-moz-document url-prefix() {
+	.playlist .iframe, .playlist iframe {
+		height: 1720px;
+	}
+}
+.playlist .info {
+	padding: 0px;
+	text-align: center;
+}
+    </style>
+  <div class="playlist"> 
+
+	<div class="block-name">История эфира</div>
+	<div class="block-content">
+		<div class="radiolist historylist">
+			<div class="active_station" st="rr">Radio Record</div>
+			<div st="1970">1970</div>
+			<div st="1980">1980</div>
+			<div st="2step">2-step</div>
+			<div st="jackin">Bass House</div>
+			<div st="bighits">Big Hits</div>
+			<div st="yo">Black</div>
+			<div st="brks">Breaks</div>
+			<div st="cadillac">Cadillac FM</div>
+			<div st="chillhouse">Chill House</div>
+			<div st="chil">Chil-Out</div>
+			<div st="complextro">Complextro</div>
+			<div st="dancecore">Dancecore</div>
+			<div st="darkside">Darkside</div>
+			<div st="deep">Deep</div>
+			<div st="discofunk">Disco/Funk</div>
+			<div st="drumhits">DnB Hits</div>
+			<div st="dream">Dream Dance</div>
+			<div st="dub">Dubstep</div>
+			<div st="club">EDM</div>
+			<div st="edmhits">EDM Hits</div>
+			<div st="elect">Electro</div>
+			<div st="eurodance">Eurodance</div>
+			<div st="fbass">Future Bass</div>
+			<div st="fut">Future House</div>
+			<div st="goa">GOA/PSY</div>
+			<div st="gold">Gold</div>
+			<div st="groovetribal">Groove/Tribal</div>
+			<div st="hbass">Hard Bass</div>
+			<div st="teo">Hardstyle</div>
+			<div st="houseclss">House Classics</div>
+			<div st="househits">House Hits</div>
+			<div st="hypno">Hypnotic</div>
+			<div st="ibiza">Innocence</div>
+			<div st="jungle">Jungle</div>
+			<div st="liquidfunk">Liquid Fink</div>
+			<div st="mix">Megamix</div>
+			<div st="mt">Midtempo</div>
+			<div st="mini">Minimal/Tech</div>
+			<div st="mmbt">Moombathon</div>
+			<div st="neurofunk">Neurofunk</div>
+			<div st="pump">Old School</div>
+			<div st="ps">Pirate Station</div>
+			<div st="progr">Progressive</div>
+			<div st="rapclassics">Rap Classics</div>
+			<div st="rap">Rap Hits</div>
+			<div st="rave">Rave FM</div>
+			<div st="rmx">Remix</div>
+			<div st="rock">Rock</div>
+			<div st="russiangold">Rus Gold</div>
+			<div st="russianhits">Rus Hits</div>
+			<div st="rus">Rus Mix</div>
+			<div st="synth">Synthwave</div>
+			<div st="techno">Techno</div>
+			<div st="technopop">Technopop</div>
+			<div st="tecktonik">Tecktonik</div>
+			<div st="trancehits">Trance Hits</div>
+			<div st="trancehouse">Trancehouse</div>
+			<div st="tm">Trancemission</div>
+			<div st="trap">Trap</div>
+			<div st="trop">Tropical</div>
+			<div st="uplift">Uplifting</div>
+			<div st="vip">Vip House</div>
+			<div st="deti">Весшнушка FM</div>
+			<div st="gast">Гастарбайтер FM</div>
+			<div st="gop">Гоп FM</div>
+			<div st="mf">Маятник Fuck'O</div>
+			<div st="mdl">Медляк FM</div>
+			<div st="naft">Нафталин FM</div>
+			<div st="synth">Симфония FM</div>
+			<div st="sd90">Супердиско 90</div>
+		</div>
+		<div class="info"></div>
+		<div class="iframe">
+			<iframe src="https://www.radiorecord.fm/recordhistory.php?chan=record" id="hisframe" frameborder="0" id="hisframe">Ваш браузер нуждается в обновлении.</iframe>
+		</div>
+      </div>  </div>
 <section class="playerfooter">
 <div class="left">
 <div class="img_track footer_img_track">
