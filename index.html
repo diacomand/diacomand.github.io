@@ -46,16 +46,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-  function Share() {
-  if (share['podcast'] == 1) {
-    var url = encodeURIComponent('https://vk.com/audios-1959?q= '+encodeURIComponent(share['title']));
-  } else {
-    var url = encodeURIComponent('https://vk.com/search?per_page=200&q='+encodeURIComponent(share['title'])+'&section=audio');
-  }
-  var title = 'Мне понравился трек '+encodeURIComponent(share['title']);
-  var image = share['img_track'];
-    window.open('https://vk.com/share.php?url='+url+'&title='+title+'&image='+img_track+'&noparse=true', '', 'width=650,height=600,top='+((screen.height-600)/2)+',left='+((screen.width-650)/2)+'');
-  }; 
+ 
 </script> 
 </head>
 <body class="loading-page">
@@ -66,7 +57,6 @@ escape(document.referrer)+((typeof(screen)=="undefined")?"":
 screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 ";h"+escape(document.title.substring(0,150))+
 ";"+Math.random();</script>
-<!-- ================= Частично код от css до js принадлежит record russia ================= -->
 <div class="body">
 <section class="player">  
 <div class="background-sector"></div>  
@@ -379,7 +369,6 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 <img src="album.png"></div>
 <div class="details"> 
 <div class="radio radioinfo">
-<div class="name namestation">Record</div> 
 <div class="artist"></div>
 <div class="title"></div>	
 </div>
@@ -419,7 +408,6 @@ if (data.stream == false) checkReserve = setInterval("checkStreamFunc()", 10000)
 });
 </script>
 <script src="re.pc.js"></script>
-<script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script>
 <script type="text/javascript" src="/js/all.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script type="text/javascript" > 
