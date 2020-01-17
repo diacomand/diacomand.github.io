@@ -299,7 +299,7 @@ header .slider {
   font-size: 16px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) {.playlist {display: none!important ;}
     .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
   .side-menu.active ~ header input {
     width: calc(50vw - 100px);
@@ -327,7 +327,7 @@ header .slider {
     flex-basis: 165px;
   }
 }
-@media (max-width: 599px) { #canvas {display: none!important ;}
+@media (max-width: 599px) {.playlist {display: none!important ;}
     .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
   .desktop-only {
     display: none;
