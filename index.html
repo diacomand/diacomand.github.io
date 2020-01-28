@@ -18,9 +18,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ff6600">
 <meta name="robots" content="index, follow" />	
-<link rel="prefetch" href="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous" as="script">
-<link rel="prefetch" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" crossorigin="anonymous" as="style"> 
-<link rel="prefetch" href="http://js.hotlog.ru/dcounter/2584928.js" crossorigin="anonymous" as="style">
+
 <meta name="keywords" content="радио рекорд, рекорд онлайн, radio record, радио онлайн, слушать онлайн, слушать рекорд, радиостанция рекорд">
 <meta name="description" content="Слушай 72 онлайн радиостанции Радио Рекорд без рекламы: Deep, Веснушка FM, Trance Hits, 2-step, Tecktonik, Neurofunk, EDM Hits, House Classics, Uplifting, Darkside, Dream Dance, Big Hits, House Hits, Synthwave, Progressive, Bass House, Midtempo, Electro, Маятник Фуко, Innocence, Gold, Russian Hits, Groove/Tribal, Complextro, 1970-е, Chill House, 1980-е, Cadillac FM, Rap Classics, Rap Hits, Disco/Funk, Technopop, Eurodance, Russian Gold, Drum'n'Bass Hits, Liquid Funk, Jungle, Megamix, EDM, Tropical, GOA/PSY, Future House, Trancemission.">
 <meta name="wot-verification" content="1e6a6bcd3c5be6df5606"/><meta name="yandex-verification" content="1ed328a3fa1309aa" /><meta name='wmail-verification' content='21ee858c36d7a76f635452005439e6c6' /><meta name="google-site-verification" content="NkJHFF629QsTfhvshgqGr12Er3KbP49RLdR8mzCuQSU" />
@@ -358,6 +356,24 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 		<div class="iframe">
 			<iframe src="https://www.radiorecord.fm/recordhistory.php?chan=record" id="hisframe" frameborder="0" id="hisframe">Ваш браузер нуждается в обновлении.</iframe>
 		</div>
+		<br>
+		<!-- HotLog -->
+<span id="hotlog_counter"></span> 
+<span id="hotlog_dyn"></span>
+<script type="text/javascript">
+    var hot_s = document.createElement('script'); hot_s.type = 'text/javascript'; hot_s.async = true;
+    hot_s.src = 'http://js.hotlog.ru/dcounter/2584928.js';
+    hot_d = document.getElementById('hotlog_dyn');
+    hot_d.appendChild(hot_s);
+</script>
+
+<noscript>
+<a href="http://click.hotlog.ru/?2584928" target="_blank">
+<img src="http://hit5.hotlog.ru/cgi-bin/hotlog/count?s=2584928&im=307" border="0"
+ alt="HotLog" title="HotLog">
+</a>
+</noscript>
+<!-- /HotLog -->
       </div>  </div>
 <section class="playerfooter">
 <div class="left">
@@ -406,10 +422,5 @@ if (data.stream == false) checkReserve = setInterval("checkStreamFunc()", 10000)
 <script src="re.pc.js"></script>
 <script type="text/javascript" src="/js/all.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script type="text/javascript" > 
-var hot_s = document.createElement('script');
-hot_s.type = 'text/javascript'; hot_s.async = true;
-hot_s.src = 'http://js.hotlog.ru/dcounter/2584928.js';
-hot_d = document.getElementById('hotlog_dyn');
-hot_d.appendChild(hot_s);</script><!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(42130574, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ecommerce:"telerecord" }); </script> <!-- /Yandex.Metrika counter --></body>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(42130574, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ecommerce:"telerecord" }); </script> <!-- /Yandex.Metrika counter --></body>
 </html>
