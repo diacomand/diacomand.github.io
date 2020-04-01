@@ -1,3 +1,7 @@
+section {
+    display: flex;
+   
+   }
 .plst {
 	float: right;
 	margin-right: 10px;
