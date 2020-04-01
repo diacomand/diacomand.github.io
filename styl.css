@@ -2,13 +2,16 @@ html {
   background: #333;
   --background: #333;
   
-  пдеер
-  --foreground: #151414;
+
   
   
   
-  середина
+ 
  --foregrounds: #333;
+  
+  
+  
+    --foreground: #151414;
   box-sizing: border-box;
   font-family: Roboto,Verdana,sans-serif;
    
