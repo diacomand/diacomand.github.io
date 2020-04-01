@@ -91,7 +91,9 @@ header input {
   max-width: 800px;
   height: 48px;
   padding: 12px;
-  border-radius: 3px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   margin: 5px auto;
   color: #FFF;
   transition: .3s, width .01s;
@@ -299,7 +301,7 @@ header .slider {
   font-size: 16px;
 }
 
-@media (max-width: 1000px) {.playlist {display: none!important ;}  section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}  .radiolist { margin-top: 68px!important ;justify-content: center;}
+@media (max-width: 1000px) {.playlist {display: none!important ;}  section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}  .radiolist { margin-top: 68px!important ;justify-content: space-around;}
   .side-menu.active ~ header input {
     width: calc(50vw - 100px);
   }
@@ -324,10 +326,10 @@ header .slider {
   .card {
     flex-basis: 165px;
   }
-  .radiolist { margin-top: 68px!important ;justify-content: center;}
+  .radiolist { margin-top: 68px!important ;justify-content: space-around;}
 }
 @media (max-width: 599px) {.playlist {display: none!important ;} section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
-.radiolist { margin-top: 68px!important ;justify-content: center;}
+.radiolist { margin-top: 68px!important ;justify-content: space-around;}
   .desktop-only {
     display: none;
   }
@@ -360,7 +362,7 @@ header .slider {
     padding: 13px 0px 10px 40px !important;
 }
  
-.radiolist { margin-top: 68px!important ;justify-content: center;}
+.radiolist { margin-top: 68px!important ;justify-content: space-around;}
 #canvas {display: none!important ;}
    section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
   .card {
