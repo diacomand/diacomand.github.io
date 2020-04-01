@@ -1,10 +1,11 @@
 html {
-  background: #18191a;
-  --background: #151414;
-  --foreground: #151414;
- --foregrounds: #292926;
+  background: #333;
+  --background: #333;
+  --foreground: #333;
+ --foregrounds: #151414;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Roboto,Verdana,sans-serif;
+   
 }
 html * {
   box-sizing: inherit;
