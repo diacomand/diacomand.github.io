@@ -1,8 +1,8 @@
 html {
-  background: #1b2834;
-  --background: #1b2834;
-  --foreground: #263846;
-  --foreground-rgb: 37, 56, 71;
+  background: #191919;
+  --background: #191919;
+  --foreground: #333;
+  --foreground-rgb: 33, 33, 33;
   box-sizing: border-box;
   font-family: sans-serif;
 }
