@@ -1,8 +1,11 @@
 html {
   background: #191919;
-  --background: #191919;
+  --background: #000;
   --foreground: #333;
-  --foreground-rgb: 33, 33, 33;
+  
+   
+  
+  --foreground-rgb: 0, 0, 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
@@ -10,6 +13,13 @@ html * {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+}
+.blur {
+    z-index: 99; /* изображение размыто */
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+
 }
 
 body {
