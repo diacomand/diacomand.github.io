@@ -17,7 +17,7 @@
 .product-content{
   float: left;
   }
-.radiolist { margin-bottom: 100px;   background: var(--foreground-rgb);
+.radiolist { margin-bottom: 100px;   background: var(--foregrounds);
     justify-content: center;
 	width: 100%;
 	padding: 0;
