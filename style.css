@@ -66,7 +66,9 @@ input {
 
 header {
   align-items: center;
-  background: #FF5722;
+      background: #ff6000;
+    background: -o-linear-gradient(315deg,#ff6000 0,#ff3000 100%);
+    background: linear-gradient(135deg,#ff6000 0,#ff3000 100%);
   color: #FFF;
   position: fixed;
   z-index: 99991;
