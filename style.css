@@ -325,10 +325,10 @@ header .slider {
   .card {
     flex-basis: 165px;
   }
-  .radiolist { margin-top: 64px!important ;justify-content: center;}
+  .radiolist { margin-top: 68px!important ;justify-content: center;}
 }
 @media (max-width: 599px) {.playlist {display: none!important ;} section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
-.radiolist { margin-top: 64px!important ;justify-content: center;}
+.radiolist { margin-top: 68px!important ;justify-content: center;}
   .desktop-only {
     display: none;
   }
@@ -361,13 +361,9 @@ header .slider {
     padding: 13px 0px 10px 40px !important;
 }
  
-.radiolist { margin-top: 64px!important ;justify-content: center;}
+.radiolist { margin-top: 68px!important ;justify-content: center;}
 #canvas {display: none!important ;}
-.radiolist .station .radiologo {justify-content: center;
-    height: 85px!important;
-  }section.player {
-    height: 1px!important ;
-  }    section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
+   section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
   .card {
     flex-basis: 140px;
   }
