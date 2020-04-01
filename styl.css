@@ -1,13 +1,9 @@
 html {
   background: #333;
   --background: #333;
- --foreground: #151414; 
+ --foreground: #292926; 
 --foregrounds: ;
-  
-  
-  
-    
-  box-sizing: border-box;
+box-sizing: border-box;
   font-family: Roboto,Verdana,sans-serif;
    
 }
