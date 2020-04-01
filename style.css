@@ -93,9 +93,9 @@ header input {
   max-width: 800px;
   height: 48px;
   padding: 12px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
   margin: 5px auto;
   color: #FFF;
   transition: .3s, width .01s;
