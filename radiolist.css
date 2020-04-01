@@ -100,7 +100,7 @@ display: table;
 }
 .category-radio div:hover:not(.active_station),
 .radiolist .station:hover:not(.active_station) {
-	color: #a0a0a0;background: rgba(255,255,255, 0.5);
+	color: ##ff6000;
 	transition: all .3s;
 }
 .category-radio div.active_station,
@@ -115,9 +115,7 @@ color: #a0a0a0;
 .category-radio div:hover:not(.active_station),
 .category-radio div.active_station {
 	color: #f5f5f5;
-	
-	
-	transition: all .3s;
+transition: all .3s;
 }
 .search-empty {
 	
