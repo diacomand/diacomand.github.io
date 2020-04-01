@@ -305,8 +305,7 @@ header .slider {
     width: calc(50vw - 100px);
   }
 }
-@media (max-width: 767px) {.playlist {display: none!important ;}
-    .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
+@media (max-width: 767px) {.playlist {display: none!important ;}  section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
   .side-menu.active ~ header .menu {
     margin: 12px;
     width: 40px;
@@ -327,7 +326,7 @@ header .slider {
     flex-basis: 165px;
   }
 }
-@media (max-width: 599px) {.playlist {display: none!important ;}
+@media (max-width: 599px) {.playlist {display: none!important ;} section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
     .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
   .desktop-only {
     display: none;
@@ -360,13 +359,14 @@ header .slider {
   .radios {justify-content: space-around;
     padding: 13px 0px 10px 40px !important;
 }
+ 
 .radiolist {justify-content: center;}
 #canvas {display: none!important ;}
 .radiolist .station .radiologo {justify-content: center;
     height: 85px!important;
   }section.player {
     height: 1px!important ;
-  }    section.player .background-sector, .player-sector {display: none!important ;}
+  }    section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
   .card {
     flex-basis: 140px;
   }
