@@ -299,8 +299,7 @@ header .slider {
   font-size: 16px;
 }
 
-@media (max-width: 1000px) {.playlist {display: none!important ;}
-    .background-sector, .player-sector {display: none!important ; height: 1px!important ;}
+@media (max-width: 1000px) {.playlist {display: none!important ;}  section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}  .radiolist { margin-top: 68px!important ;justify-content: center;}
   .side-menu.active ~ header input {
     width: calc(50vw - 100px);
   }
