@@ -90,7 +90,7 @@ section.player {margin-top: 65px;
 	display: table;
 	width: 100%;
 	max-width: 1920px;
-	background-color: #171717;
+	background-color: #000000;
 	position: relative;
 	overflow: hidden;
 }
