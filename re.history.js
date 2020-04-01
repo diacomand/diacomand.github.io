@@ -23,6 +23,7 @@ $('.historylist').children('div').click(function() {
 	if (st == 'tm') { st = "trancemission" }
 	if (st == 'ibiza') { st = "innocence" }
 	if (st == 'elect') { st = "elec" }
+	if (st == 'rv') { st = "rv" }
 	$("#hisframe").attr("src","https://www.radiorecord.fm/recordhistory.php?chan="+st);
 	$('.historylist').children('div').removeClass('active_station');
 	$(this).addClass('active_station');
@@ -55,4 +56,5 @@ function historyRename(st) {
 	if (st == 'tm') { chan = "trancemission" }
 	if (st == 'ibiza') { chan = "innocence" }
 	if (st == 'elect') { chan = "elec" }
+	if (st == 'rv') { chan = "rv" }
 }
