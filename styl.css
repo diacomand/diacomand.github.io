@@ -1,17 +1,12 @@
 html {
   background: #333;
   --background: #333;
-  
-
-  
-  
-  
- 
- --foregrounds: #333;
+ --foreground: #151414; 
+--foregrounds: #333;
   
   
   
-    --foreground: #151414;
+    
   box-sizing: border-box;
   font-family: Roboto,Verdana,sans-serif;
    
