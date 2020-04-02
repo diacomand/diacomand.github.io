@@ -156,7 +156,7 @@ section.player .player-btn {
 }
 section.player .player-btn .controls {
 	color: white;
-	height: 30px;
+	height: 35px;
 	cursor: pointer;
 	text-align: center;
 	background-color: #ff6600;
@@ -171,8 +171,8 @@ section.player .player-btn .loading-player {
 	cursor: not-allowed;
 }
 section.player .player-btn .controls i {
-	height: 30px;
-	line-height: 30px;
+	height: 35px;
+	line-height: 35px;
 	color: white;
 	font-size: 15px;
 }
@@ -297,8 +297,8 @@ canvas {position: absolute;z-index: 1;
 }
 .pulse {text-align: center;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background: #ff5722;
   cursor: pointer;
