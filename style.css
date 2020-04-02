@@ -66,8 +66,7 @@ input {
 
 header {
   align-items: center;
-      background: #ff6000;
-
+  background: #ff6000;
   color: #FFF;
   position: fixed;
   z-index: 99991;
@@ -162,11 +161,11 @@ header .slider {
 
 
 .side-menu {
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   background: #FFF;
   height: 100%;
-  width: 225px;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
