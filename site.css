@@ -169,8 +169,7 @@ section.player .player-btn .controls i {
 	color: white;
 	font-size: 36px;
 	text-align:center;
-	-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s;
-}
+	}
 section.player .player-btn .controls i.fa-play {
 	margin-left: 15x;
 }
@@ -303,6 +302,7 @@ canvas {position: absolute;z-index: 1;
 .controls, .loading-player {
  font-size: 16px;
  line-height: 50px;
+-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s;	
 }
 
 .pulse:hover {
