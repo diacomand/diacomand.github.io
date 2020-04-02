@@ -42,9 +42,7 @@ section {
   color: #fff;
   height: 80px;
   width: 100%;
-  background: rgba(33,33,33,0.3);
-   z-index: 99;
-  
+  background: rgba(0,0,0,0.9)!important;
   position: fixed;
   bottom: 0PX;
   left: 0;
