@@ -301,7 +301,7 @@ canvas {position: absolute;z-index: 1;
   animation: pulse 2s infinite;
 }
 .controls, .loading-player {
- font-size: 36px;
+ font-size: 16px;
  line-height: 50px;
 }
 
