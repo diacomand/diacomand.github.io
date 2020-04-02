@@ -369,7 +369,7 @@ header .slider {
 #canvas {display: none!important ;}
    section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
   .card {
-    flex-basis: 140px;
+    flex-basis: 145px;
   }
 }
 .ios * {
