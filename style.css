@@ -364,7 +364,8 @@ header .slider {
   .radios {justify-content: space-evenly!important;
     padding: 13px 0px 10px 40px !important;
 }
- 
+ .radiolist .station {
+   height: 120px!important;}
 .radiolist { margin-top: 68px!important ;justify-content: space-evenly!important;}
 #canvas {display: none!important ;}
    section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
