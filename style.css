@@ -369,8 +369,17 @@ header .slider {
 #canvas {display: none!important ;}
    section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
   .card {
-    flex-basis: 145px;
+    flex-basis: 140px;
   }
+  
+radiolist .station .radiologo {
+    width: 100%;
+    height: 82px;
+    text-align: center;
+    margin: 5px 0 0 0;
+    position: relative;
+    float: left;
+}  
 }
 .ios * {
   cursor: pointer;
