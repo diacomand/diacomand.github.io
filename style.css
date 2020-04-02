@@ -361,22 +361,17 @@ header .slider {
   }
 }
 @media (max-width: 480px) {
-  .radios {justify-content: space-evenly;
+  .radios {justify-content: space-evenly!important;
     padding: 13px 0px 10px 40px !important;
 }
  
-.radiolist { margin-top: 68px!important ;justify-content: space-evenly;}
+.radiolist { margin-top: 68px!important ;justify-content: space-evenly!important;}
 #canvas {display: none!important ;}
    section.player .background-sector, .player-sector {display: none!important ;} .player {display: none!important ;}
   .card {
     flex-basis: 140px;
   }
-.radiolist .station {
-    width: 20%!important;  
-.radiolist .station .radiologo {
-    margin: 5px 0 0 0!important;
- 
-}  
+
 }
 .ios * {
   cursor: pointer;
