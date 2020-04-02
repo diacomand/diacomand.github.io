@@ -156,7 +156,7 @@ section.player .player-btn {
 }
 section.player .player-btn .controls {
 	color: white;
-	height: 20px;
+	height: 30px;
 	cursor: pointer;
 	text-align: center;
 	background-color: #ff6600;
@@ -171,10 +171,10 @@ section.player .player-btn .loading-player {
 	cursor: not-allowed;
 }
 section.player .player-btn .controls i {
-	height: 20px;
-	line-height: 20px;
+	height: 30px;
+	line-height: 30px;
 	color: white;
-	font-size: 10px;
+	font-size: 15px;
 }
 section.player .player-btn .controls i.fa-play {
 	margin-left: 10px;
@@ -297,8 +297,8 @@ canvas {position: absolute;z-index: 1;
 }
 .pulse {text-align: center;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: #ff5722;
   cursor: pointer;
@@ -307,7 +307,7 @@ canvas {position: absolute;z-index: 1;
 }
 .controls, .loading-player {
  font-size: 10px;
- line-height: 20px;
+ line-height: 30px;
 }
 
 .pulse:hover {
