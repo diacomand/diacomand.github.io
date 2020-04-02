@@ -371,7 +371,8 @@ header .slider {
   .card {
     flex-basis: 140px;
   }
-  
+.radiolist .station {
+    width: 20%!important;  
 radiolist .station .radiologo {
     margin: 5px 0 0 0!important;
  
