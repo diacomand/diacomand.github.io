@@ -40,7 +40,7 @@ button {
 
 section {
   color: #fff;
-  height: 80px;
+  height: 65px;
   width: 100%;
   background: rgba(41,41,38,0.9)!important;
   position: fixed;
@@ -96,11 +96,11 @@ section .left .overlay {
 }
 section .left .overlay svg {
   fill: white;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
 }
 section .left img {
-  width: 80px;
+  width: 65px;
   display: block;
 }
 section .left .details {padding: 4px 16px;
