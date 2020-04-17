@@ -143,8 +143,8 @@ a.logo_text span {
 }
 .login_box {
     margin: 0 auto;
-    max-width: 400px;
-    padding: 20px 0;
+    max-width: 600px;
+    padding: 10px 0;
     width: 100%;
     min-height: 100%;
     display: flex;
