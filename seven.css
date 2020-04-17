@@ -116,7 +116,7 @@ a.logo_text {
     text-decoration: none;
     display: flex;
     align-items: center;
-    width: 280px;
+    width: 300px;
     justify-content: center;
     margin: 0 auto 25px;
 }
@@ -419,7 +419,7 @@ ul.login_tab li a.active{
     }
     .login_wrapper .login_box {
         margin: 0 auto;
-        max-width: 100%;
+        max-width: 95%;
     }
     .login_wrapper .login_form .login_form_inner {
         padding: 1px;
@@ -436,7 +436,7 @@ ul.login_tab li a.active{
 
 @media (max-width: 479px) { 
     .login_wrapper .login_form .login_form_inner {
-        padding: 0px 0px;
+        padding: 3px 3px;
     }
 }
 
