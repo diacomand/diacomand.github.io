@@ -21,7 +21,7 @@ Version:    1.1.0
 ::-webkit-scrollbar{width:5px;height:3px}::-webkit-scrollbar-thumb{background-color:rgba(255,255,255,.3);-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px}::-webkit-scrollbar-thumb:hover{background-color:rgba(255,255,255,.5)}::-webkit-scrollbar-track{background-color:rgba(255,255,255,.1)}::-webkit-scrollbar-track:hover{background-color:rgba(255,255,255,.1)}
 body {
     font-family: 'Nunito', sans-serif;
-    color: #535353;
+    color: #535353;background: #ecf3f9;
 }
 
 img{
@@ -107,9 +107,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     height: 40%;
     background-image:url(tEUmQButyl.jpg);
     background-repeat: no-repeat;
-    background-size:cover
-
-;
+    background-size:cover;
 }
 a.logo_text {
     color: #fff;
@@ -120,7 +118,7 @@ a.logo_text {
     align-items: center;
     width: 200px;
     justify-content: center;
-    margin: 0 auto 45px;
+    margin: 0 auto 25px;
 }
 a.logo_text span {
     background: #ff574d;
@@ -129,7 +127,7 @@ a.logo_text span {
     padding: 3px 5px 3px;
     color: #fff;
     font-weight: 700;
-    border-radius: 4px;
+    border-radius: 5px;
     margin-right: 10px;
 }
 .login_wrapper:before {
@@ -146,7 +144,7 @@ a.logo_text span {
 .login_box {
     margin: 0 auto;
     max-width: 900px;
-    padding: 10px 0;
+    padding: 20px 0;
     width: 100%;
     min-height: 100%;
     display: flex;
