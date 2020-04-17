@@ -161,7 +161,7 @@ a.logo_text span {
     padding: 1px 1px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
-    background: #000;
+    background: none;
     box-shadow: 0 0 50px rgba(0,0,0,0.06);
     -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.06);
     text-align: center;
