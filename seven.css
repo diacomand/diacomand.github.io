@@ -118,7 +118,7 @@ a.logo_text {
     align-items: center;
     width: 100%;
     justify-content: center;
-    margin: 0 auto 25px;
+    margin: 25px auto 25px;
 }
 a.logo_text span {
     background: #ff574d;
