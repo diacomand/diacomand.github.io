@@ -143,7 +143,7 @@ a.logo_text span {
 }
 .login_box {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 980px;
     padding: 10px 0;
     width: 100%;
     min-height: 100%;
@@ -158,7 +158,7 @@ a.logo_text span {
 
 
 .login_wrapper .login_form .login_form_inner {
-    padding: 30px 30px;
+    padding: 10px 10px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     background: #000;
