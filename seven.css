@@ -116,7 +116,7 @@ a.logo_text {
     text-decoration: none;
     display: flex;
     align-items: center;
-    width: 170px;
+    width: 220px;
     justify-content: center;
     margin: 0 auto 25px;
 }
@@ -158,7 +158,7 @@ a.logo_text span {
 
 
 .login_wrapper .login_form .login_form_inner {
-    padding: 5px 5px;
+    padding: 1px 1px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     background: #000;
@@ -419,31 +419,24 @@ ul.login_tab li a.active{
     }
     .login_wrapper .login_box {
         margin: 0 auto;
-        max-width: 400px;
+        max-width: 600px;
     }
     .login_wrapper .login_form .login_form_inner {
-        padding: 30px;
+        padding: 1px;
     }
 }
 
 @media (max-width: 767px) { 
-.login_img_caption h2 {
-    font-size: 32px;
+
+.login_wrapper .login_form .login_form_inner {
+        padding: 0px 0px;
+    }
 }
-.social-list li a {
-    width: 75px;
-    font-size: 0;
-    margin: 0 1px;
-}
-.social-list li a i {
-    font-size: 14px;
-    line-height: 32px;
-}
-}
+
 
 @media (max-width: 479px) { 
     .login_wrapper .login_form .login_form_inner {
-        padding: 30px 20px;
+        padding: 0px 0px;
     }
 }
 
