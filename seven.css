@@ -419,7 +419,7 @@ ul.login_tab li a.active{
     }
     .login_wrapper .login_box {
         margin: 0 auto;
-        max-width: 600px;
+        max-width: 100%;
     }
     .login_wrapper .login_form .login_form_inner {
         padding: 1px;
