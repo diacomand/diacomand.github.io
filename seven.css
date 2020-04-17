@@ -143,7 +143,7 @@ a.logo_text span {
 }
 .login_box {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 900px;
     padding: 10px 0;
     width: 100%;
     min-height: 100%;
@@ -158,15 +158,15 @@ a.logo_text span {
 
 
 .login_wrapper .login_form .login_form_inner {
-    padding: 0px 0px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    background: none;
+    padding: 3px 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: black;
     box-shadow: 0 0 50px rgba(0,0,0,0.06);
     -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.06);
     text-align: center;
     position: relative;
-    margin: 0 0 25px;
+    margin: 0 0 20px;
 }
 .login_wrapper .login_form.forgot_password .login_form_inner{
     margin: 0 0 10px;
