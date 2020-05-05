@@ -14,10 +14,6 @@ ErrorDocument 404 /index.html
 <filesMatch ".(jpg|jpeg|png|gif|ico)$">
 Header set Cache-Control "max-age=31536000, public"
 </filesMatch>
-# One month for css and js
-<filesMatch ".(css)$">
-Header set Cache-Control "max-age=2628000, public"
-</filesMatch>
 Redirect / st http://recordstation.ru
 Redirect / tv http://recordstation.ru
 ErrorDocument 404 http://recordstation.ru
