@@ -3,10 +3,10 @@ RewriteEngine on
 RewriteBase /
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
 RewriteCond %{SERVER_PORT} ^443$ [OR] 
-RewriteCond %{HTTPS} =on 
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^.]+)\.html$ http://recordstation.ru/$1 [R=301,L]
 RewriteCond %{REQUEST_URI} !(\.[^./]+)$
-RewriteCond %{REQUEST_fileNAME} !-d
 RewriteCond %{REQUEST_fileNAME} !-f
 RewriteRule (.*)/$1.html
 ErrorDocument 404 /index.html
