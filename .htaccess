@@ -18,3 +18,5 @@ Header set Cache-Control "max-age=31536000, public"
 <filesMatch ".(css)$">
 Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
+Redirect / st http://recordstation.ru
+Redirect / tv http://recordstation.ru
