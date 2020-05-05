@@ -20,3 +20,8 @@ Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
 Redirect / st http://recordstation.ru
 Redirect / tv http://recordstation.ru
+ErrorDocument 404 http://recordstation.ru
+ErrorDocument 401 http://recordstation.ru
+ErrorDocument 403 http://recordstation.ru
+ErrorDocument 500 http://recordstation.ru
+deny from all
