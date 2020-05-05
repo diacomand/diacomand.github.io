@@ -67,9 +67,10 @@ display: table;
 	height: 15px;
 	background-color: red;
 	float: right;
+	border-radius:5px;
 	position: absolute;
 	margin-top: -3px;
-	padding: 1px;
+	padding: 2px;
 	right: 0px;
 }
 .radiolist .station .radiologo i {
