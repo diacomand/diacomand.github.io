@@ -9,7 +9,10 @@ RewriteRule ^([^.]+)\.html$ http://recordstation.ru/$1 [R=301,L]
 RewriteCond %{REQUEST_URI} !(\.[^./]+)$
 RewriteCond %{REQUEST_fileNAME} !-f
 RewriteRule (.*)/$1.html
-
+# One year for image files
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
 Redirect / st http://recordstation.ru
 Redirect / tv http://recordstation.ru
 ErrorDocument 404 http://recordstation.ru
