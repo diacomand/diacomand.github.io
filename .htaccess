@@ -1,17 +1,32 @@
-DirectoryIndex index.html
-RewriteEngine on
-RewriteBase /
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
-RewriteCond %{SERVER_PORT} ^443$ [OR] 
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^.]+)\.html$ http://recordstation.ru/$1 [R=301,L]
-RewriteCond %{REQUEST_URI} !(\.[^./]+)$
-RewriteCond %{REQUEST_fileNAME} !-f
-RewriteRule (.*)/$1.html
-Redirect / st http://recordstation.ru
-Redirect / tv http://recordstation.ru
-ErrorDocument 404 http://recordstation.ru
-ErrorDocument 401 http://recordstation.ru
-ErrorDocument 403 http://recordstation.ru
-ErrorDocument 500 http://recordstation.ru
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+    RewriteEngine on
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . index.html
+</IfModule>
+<FilesMatch "\.(gitignore|htaccess|env|env-example)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+<IfModule mod_expires.c>
+  Header set cache-control: public
+  ExpiresActive on
+  ExpiresByType font/ttf      "access plus 1 month"
+  ExpiresByType font/woff     "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  <FilesMatch "\.(ttf|otf|eot|svg)$" >
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+</IfModule>
+
+Options All -Indexes
+
+
+
