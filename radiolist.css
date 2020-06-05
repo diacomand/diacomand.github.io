@@ -62,14 +62,14 @@ display: table;
 	color: white;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	font-size: 10px;
+	font-size: 9px;
 	width: 27px;
 	height: 15px;
-	background-color: #ee4242;
+	background-color: #ff734c;
 	float: right;
-	border-radius:10px;
+	border-radius:9px;
 	position: absolute;
-	margin-top: -3px;
+	margin-top: -4px;
 	padding:1px;
 	right: 0px;
 }
