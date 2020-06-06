@@ -62,15 +62,14 @@ display: table;
 	color: white;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	font-size: 9px;
-	width: 27px;
+	width: 15px;
 	height: 15px;
 	background-color: #ff734c;
 	float: right;
-	border-radius:9px;
+	border-radius:10px;
 	position: absolute;
-	margin-top: -2px;
-	padding:1px;
+	margin-top: 0px;
+	padding:0px;
 	right: 0px;
 }
 .radiolist .station .radiologo i {
