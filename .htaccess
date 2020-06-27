@@ -3,7 +3,7 @@
         Options -MultiViews
     </IfModule>
     RewriteEngine on
-    RewriteEngine OnRewriteBase /RewriteCond %{HTTP:X-HTTPS} !1RewriteCond %{HTTP_HOST} ^recordstation\.ru$RewriteRule ^(.*)$ https://recordstation.ru/$1 [R=301,L]
+   
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule . index.html
