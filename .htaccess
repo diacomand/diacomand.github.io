@@ -13,7 +13,17 @@
     Deny from all
 </FilesMatch>
 
-
+<ifModule mod_headers.c>
+	#кэшировать html и htm файлы на один день
+	<FilesMatch "\.(html|htm)$">
+		Header set Cache-Control "max-age=43200"
+	</FilesMatch>
+	#кэшировать css, javascript и текстовые файлы на одну неделю
+	<FilesMatch "\.(css|txt)$">
+		Header set Cache-Control "max-age=43200"
+	</FilesMatch>
+	
+</IfModule>
 
 <IfModule mod_deflate.c>
   <FilesMatch "\.(ttf|otf|eot|svg)$" >
