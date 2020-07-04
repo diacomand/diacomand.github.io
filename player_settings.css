@@ -58,6 +58,7 @@ border-radius: 16px;
 	display: inline;
 	margin: 5px;
 	transition: all .3s;
+	box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
 }
 .player-settings-window .ps-section .radio-set .bitrate-btn:last-child {
 	margin-right: 0;
