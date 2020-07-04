@@ -14,7 +14,7 @@
 .player-settings-window .ps-section label {
 	cursor: pointer;
 	position: relative;
-	margin-left: 24px;
+	
 }
 .player-settings-window .ps-section label input[type="checkbox"] {
 	display: none;
@@ -29,11 +29,12 @@
 }
 .player-settings-window .ps-section label input[name="saveRadioSettings"]:checked + .checkbox_volume,
 .player-settings-window .ps-section label input[name="replaceSPB"]:checked + .checkbox_spb {
-	background: #ff6600 url('https://www.record-russia.ru/Content/Images/Site/checkbox.png') no-repeat center center;
+	background: #ff6600 url('/checkbox.png') no-repeat center center;
 	animation: onCheck 0.4s ease-in-out;
 	border: none;
 	width: 18px;
 	height: 18px;
+	border-radius:10px;
 }
 @keyframes onCheck {
 	0% { transform: scale(0.8) }
