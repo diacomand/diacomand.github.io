@@ -55,7 +55,7 @@ border-radius: 16px;
     -moz-border-radius: 16px;
 	background-color: #2e2e2e;
 	display: inline;
-	margin: 1px;
+	margin: 5px;
 	transition: all .3s;
 }
 .player-settings-window .ps-section .radio-set .bitrate-btn:last-child {
