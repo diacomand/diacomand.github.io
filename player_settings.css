@@ -18,10 +18,12 @@
 .player-settings-window .ps-section label .checkbox {
 	position: absolute;
 	
-	width: 16px;
-	height: 16px;
-border-radius:5px;
-	border: 1px solid white;
+	width: 18px;
+	height: 18px;
+border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+	border: 1px solid #262626;
 }
 .player-settings-window .ps-section label input[name="saveRadioSettings"]:checked + .checkbox_volume,
 .player-settings-window .ps-section label input[name="replaceSPB"]:checked + .checkbox_spb {
