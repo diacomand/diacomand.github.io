@@ -3,7 +3,7 @@
 <div class="body"><section class="player"><div class="background-sector"></div><div class="player-sector">
  <div class="content"><div class="navigation" id="radio"></div><div class="block-content"><div class="img-section"><div class="img_track"><i class="icon-st-rr"></i></div></div>
 	 <div class="main-radio-sector"><div class="radio-sector radio"><div class="name namestation">Record</div>
-		 <div class="settings-btn" title="Настройки плеера"><i class="fas fa-cog"></i</div>
+		 
 		 <div class="artist"></div><div class="title"></div>
 	 
 
@@ -20,35 +20,7 @@
 	<div  class="right"><a style="display:none" href="/live" class="lv"><span class="videocat_live_icon"></span></a></div></section><audio src="" autoplay style="display: none;" id="recordplayer" controls></audio><script  src="script.js"></script> <script src="jquery.min.js"></script>
 	
 	
-	<div class="player-settings-window window-block" style="display: none">
-	<div class="overlay"></div>
-	<div class="visible">
-		<div class="player-settings-close">
-			<i class="fa fa-times" aria-hidden="true"></i>
-		</div>
-		<div class="ps-name">Настройки плеера</div>
-		<div class="ps-section">
-			<label>
-				<input name="saveRadioSettings" id="saveRadioSettings" type="checkbox">
-				<span class="checkbox checkbox_volume"></span>
-				Запоминать выбранную станцию и уровень громкости
-			</label>
-			<span class="ps-second-name">Качество / скорость потока:</span>
-			<div class="radio-set">
-				<div class="bitrate-btn" value="320">MP3 320</div>
-				<div class="bitrate-btn" value="128">MP3 128</div>
-				<div class="bitrate-btn" value="64">MP3 64</div>
-				<div class="bitrate-btn" value="aac_64">AAC 64</div>
-				<div class="bitrate-btn" value="aac">AAC 32</div>
-			</div>
-				<label class="spb-main">
-					<input name="replaceSPB" id="replaceSPB" type="checkbox">
-					<span class="checkbox checkbox_spb"></span>
-					Заменить основной поток на трансляцию для Санкт-Петербурга
-				</label>
-		</div>
-	</div>
-</div>
+
 	<script src="oldre.radiorecord.player.js"></script><script src="oldre.trackinfo.internet.js"></script><script src="re.history.js"></script><script type="text/javascript"> region = 'region'; radioid = 'spb'; var checkReserve; reserve = false; $.ajaxSetup({cache: false}); $.getJSON('/stream', function (data) {if (data.stream == false) checkReserve = setInterval("checkStreamFunc()", 10000);});
 </script><script src="re.pc.js"></script><script type="text/javascript" src="/js/all.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script></script><script src="/js/popper.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-2.2.0.min.js"></script>
 <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(42130574, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ecommerce:"telerecord" }); </script>
