@@ -1,15 +1,11 @@
 
 
-.player-settings-window .ps-second-name {
-	
-	display: block;
-}
 
 .player-settings-window .player-settings-close:hover {
 	opacity: 0.8;
 }
 .player-settings-window .ps-section {
-	padding: 0;
+	padding: 0; margin: 0px;
 }
 .player-settings-window .ps-section label {
 	cursor: pointer;
