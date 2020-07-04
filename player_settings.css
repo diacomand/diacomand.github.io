@@ -24,7 +24,7 @@
 	left: -24px;
 	width: 16px;
 	height: 16px;
-
+border-radius:5px;
 	border: 1px solid white;
 }
 .player-settings-window .ps-section label input[name="saveRadioSettings"]:checked + .checkbox_volume,
@@ -34,7 +34,7 @@
 	border: none;
 	width: 18px;
 	height: 18px;
-	border-radius:10px;
+	border-radius:5px;
 }
 @keyframes onCheck {
 	0% { transform: scale(0.8) }
