@@ -1,0 +1,409 @@
+/*
+Script Name: MusicStore
+Description: Music Affiliate Script.
+Author: ArmorThemes
+Author URI: http://www.armorthemes.com/
+Version: 1.4                            
+*******************************************************************************************
+*******************************************************************************************                                                                                                           
+ __  __           _       _____ _                 
+|  \/  |         (_)     / ____| |                
+| \  / |_   _ ___ _  ___| (___ | |_ ___  _ __ ___ 
+| |\/| | | | / __| |/ __|\___ \| __/ _ \| '__/ _ \
+| |  | | |_| \__ \ | (__ ____) | || (_) | | |  __/
+|_|  |_|\__,_|___/_|\___|_____/ \__\___/|_|  \___|
+
+*******************************************************************************************
+*******************************************************************************************		
+*/
+/*------------------ Body -----------------------*/
+a{color:#212121;text-decoration:none;}a:hover, a:focus{color:#F06C00;text-decoration:none;}
+b, strong {
+    font-weight: 500;
+}
+.btn {font-weight: 400;}
+/*------------------ Header -----------------------*/
+.navbar-brand {padding: 13px 5px 13px 15px;}
+@media (max-width: 1199px) {
+  .navbar .navbar-brand {
+    height: 60px;
+    padding: 13px 5px 13px 15px;
+  }
+}
+.navbar-toggle {margin-top: 14px;}
+.drop-row {
+    width: 150px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+	vertical-align: top;
+}
+.dropdown-menu {
+    min-width: 450px;
+}
+@media (max-width: 767px) {
+.dropdown-menu {
+    min-width: 180px;
+}
+.drop-row {
+    width: 100%;
+}
+}
+.navbar .dropdown-menu li > a, .navbar.navbar-default .dropdown-menu li > a {
+    font-size: 14px;
+    padding: 8px 16px;
+    display: block;
+	color: #333;
+	font-weight: 400;
+}
+.searchbut {
+    display: inline-block;
+    padding:6px 5px 6px 12px;
+	margin-top: 6px;
+	margin-bottom: -2px;
+	color:#ffffff;
+	background:none;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border:none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.searchbut:hover {color:#ffffff}
+.searchbut i {font-size: 21px;}
+.navbar .fakeinput {width: 65px;}
+.dropdownjs::after {
+    right: 5px;
+    top: 2px;
+    font-size: 17px;
+    position: absolute;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    content: "\e5c5";
+    pointer-events: none;
+    color: #fff;
+}
+/*------------------ Home Page -----------------------*/
+.scrollcontent{position: relative;z-index: 1;padding-top: 15px;}
+.scrollback {height:320px;display: block;position: relative;}
+.scrolltitle {position: relative;margin-bottom: 15px;font-weight: bold;border-bottom: 3px solid #D5D5D5;}
+.scrolltitle h1 {color: #212121;display: inline-block;border-bottom: 3px solid #F06C00;margin-bottom: -3px;line-height: 24px;font-size: 24px;font-weight: 400;padding-bottom: 10px;}
+.homethumb {margin-right: 15px;float: left;overflow: hidden;}
+.homethumb .overlay {position:absolute;left: 0px;width:200px;height:200px;background-color:rgba(0,0,0,0.5);opacity:0;visibility:hidden;-webkit-transition:.25s;-moz-transition:.25s;-ms-transition:.25s;-o-transition:.25s;transition:.25s;}
+.homethumb:hover .overlay {cursor:pointer;visibility:visible;opacity:1;}
+.homethumb .overlay p{font-size:14px;color:#fff;margin: 80px 10px 0px 10px;font-weight: 400;text-align: center;}
+.homethumb i {color: #F60;font-size: 38px;position: absolute;width: 100%;text-align: center;margin-top: 75px;}
+.box1 {margin-right: 10px;}
+.box2 {margin-right: 5px;margin-left: 5px;}
+.box3 {margin-left: 10px;}
+@media (max-width: 1199px) {
+.box1, .box2, .box3 {margin: 5px 0px 10px 0px;  }
+}
+.topbox {background:#ffffff;padding:10px;border-radius: 2px;-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.27);-moz-box-shadow: 0 0 6px rgba(0,0,0,0.27);box-shadow: 0 0 6px rgba(0,0,0,0.27);}
+.topbox h2 {margin-top: 5px;margin-bottom:10px;margin-left: 5px;font-size: 22px;font-weight: 400;color: #212121;border-bottom: 2px solid #F06C00;padding-bottom: 10px;}
+.topbox .topboxitem  {width: 100%;padding: 5px 0px;display: inline-block;border-bottom: 1px solid #ddd;}
+.topbox .topboxitem .topboximage {}
+.topbox .topboxitem .topboximage img {float: left;margin-right: 10px;vertical-align: top;}
+.topbox .topboxitem .topboxtitle {font-size:14px;color:#333;}
+.topbox .topboxitem:nth-child(even) {background-color:#f9f9f9;}
+.topbox .topboxitem .nr1 a {color:#F06C00;}
+.rounded-list {
+border-radius: 100%;
+text-align: center;
+line-height: 55px;
+display: block;
+width: 55px;
+height: 55px;
+float: left;
+margin-right: 10px;
+transition: all .3s ease-out;   
+}
+.rounded-list a{
+cursor:default;
+text-align: center;
+line-height: 55px;
+font-size: 28px;
+}
+.rounded-list:hover{
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-ms-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+transform:rotate(360deg); 
+}
+.rounded-list a:hover{color: #212121;}
+/*------------------ Index Pages -----------------------*/
+.pagetopbox {padding: 25px 0px 0px 0px;}
+.pagebottombox {padding:15px 0px 25px 0px;}
+.pagetitle {margin-bottom: 15px;margin-top: 15px;font-weight: bold;border-bottom: 3px solid #D5D5D5;}
+.pagetitle h1 {color: #212121;display: inline-block;border-bottom: 3px solid #F06C00;margin-bottom: -3px;line-height: 24px;font-size: 24px;font-weight: 400;padding-bottom: 10px;}
+.page-itemlist{list-style: none;margin: 0px;position: relative;padding: 0px;}
+.page-item{width:180px;float:left;margin: 15px 60px 30px 0px;  }
+.page-item img{width:180px;height: 180px;background: #ffffff;box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);}
+.page-item .info {margin-top:10px;}
+.page-item h3, .page-item h4 {
+    position: relative;
+    display: block;
+   height: 20px;
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.page-item h3 {font-weight: 500;}
+.page-item:nth-child(5n) {margin: 15px 0px 30px 0px;}
+@media (max-width: 1199px) {
+.page-item{width:180px;float:left;margin: 15px 30px 30px 0px;  }
+.page-item:nth-child(5n) {margin: 15px 30px 30px 0px;}
+}
+/* Back to top button */
+#back-top {
+	position: fixed;
+	bottom: 10px;
+	right: 15px;
+	z-index: 1;
+}
+#back-top a {
+	display: block;
+	text-align: center;
+	background: #F06C00;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+}
+#back-top a:hover {background:#F18229;}
+#back-top i {
+	color: #fff;
+	font-size: 32px;
+	margin-top: 5px;
+	float: left;
+	width: 100%;	
+}
+/*------------------ Music Pages -----------------------*/
+@media (max-width: 1199px) {
+.col-md-8 {
+    padding-right:0px;
+}
+.col-md-4 {
+    padding-left:0px;
+}
+}
+.headpage {
+    background-color: #FFFFFF;
+    position: relative;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+.headpageimage {
+    float: left;
+    padding: 10px 25px 20px 0px;
+}
+.headpageimage img{box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);}
+.headpageinfo {
+    float: left;
+    max-width: 480px;
+}
+.product-title {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 0px;
+	margin-top: 10px;
+}
+.product-stock {
+    color: #777777;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.headpageright {
+    float: right;
+    padding: 20px 0px 0px 0px;
+}
+.product-rating {
+    font-size: 18px;
+    margin-top: 7px;
+}
+.postactions {clear: both;margin-top: 10px;margin-bottom: 20px;border-top: 1px solid #ddd;}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+}
+.postcontent {float: left;margin: 0px 0px 30px 0px;}
+.postmain {padding: 15px;margin-bottom: 20px;background-color: #fff;border-radius: 2px;overflow: hidden;
+-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.27);
+-moz-box-shadow: 0 0 6px rgba(0,0,0,0.27);
+box-shadow: 0 0 6px rgba(0,0,0,0.27);
+}
+.postmaintitle {clear: both;margin-bottom:25px;margin-top:0px;border-bottom: 3px solid #D5D5D5;}
+.postmaintitle h3 {color: #212121;display: inline-block;border-bottom: 3px solid #F06C00;margin-top:0px;margin-bottom: -3px;line-height: 22px;font-size: 20px;font-weight: 400;padding-bottom: 10px;}
+.nav-tabs {background: #F06C00;border:none;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #ffffff !important;
+    cursor: default;
+    background-color: #F18229 !important;
+    border-radius: 0px;
+    margin-bottom: 1px;
+}
+.tab-content {
+    padding:20px;
+}
+/* post items albums, videos, reviews */
+.post-itemlist{list-style: none;margin: 0px;position: relative;padding: 0px;}
+.post-item{width:100px;float:left;margin: 0px 23px 30px 0px;  }
+.post-item img{width:100px;height: 100px;background: #ffffff;box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);}
+.post-item .info {margin-top:10px;}
+.post-item h3, .post-item h4 {
+    position: relative;
+    display: block;
+   height: 18px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+}
+.post-item h3 {font-weight: 400;}
+.post-item:nth-child(6n) {margin: 0px 0px 30px 0px;}
+@media (max-width: 1199px) {
+.post-item{margin: 0px 15px 30px 0px;  }
+.post-item:nth-child(6n) {margin: 0px 15px 30px 0px;}
+}
+#reviews li {margin-bottom: 15px;border-bottom: 1px solid #ddd;padding-bottom: 15px;}
+#reviews li .tit{font-weight:400;font-size:14px;margin-bottom:5px;}
+#reviews li .auth{margin-bottom:10px;}
+#reviews li .cont{font-style: italic;}
+.starbox {margin: 8px 0px;}
+span.stars, span.stars span {display: block;background: url(images/stars.png) 0 -16px repeat-x;width: 80px;height: 16px;}
+span.stars span {background-position: 0 0;}
+/*------------------ Other Pages -----------------------*/
+.box-pagecontent {margin-top:20px;}
+.posttitle {margin-bottom: 15px;margin-top: 15px;border-bottom: 3px solid #D5D5D5;}
+.posttitle h1 {color: #212121;display: inline-block;border-bottom: 3px solid #F06C00;margin-bottom: -3px;line-height: 22px;font-size: 20px;font-weight: 400;padding-bottom: 10px;}
+.randombox {padding:20px 20px;margin-top:20px;margin-bottom:30px;color: #333;background-color: #FFF;box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);}
+.randombox p {white-space: pre-wrap;margin: 0px;}
+/*------------------ Footer -----------------------*/
+body > footer {background:#333;padding-top: 15px;font-size: 12px;color: #DDD;margin-left:auto;margin-right:auto;width:100%;height:50px;clear:both;}
+body > footer .footcontent{max-width:1140px;margin:0 auto;}
+body > footer .footcontent .pull-left b{color: #F60;}
+body > footer .footcontent a{color: #DDD;}
+body > footer .footcontent a:hover{color: #FFF;}
+body > footer .footsep{margin: 10px;border-left: 1px solid #4D515F;}
+/*------------------ jcarousel -----------------------*/
+.fcarousel .carousel-container {
+    position: relative;
+    margin: 10px 35px;
+}
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+	width: 200px;
+	height: 200px;
+	border: none;
+	margin: 7px;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+	background: none repeat scroll 0% 0% #fff;
+	transition: all 0.25s ease 0s;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.fcarousel .carousel-prev, .fcarousel .carousel-next {
+    display: inline-block;
+    width: 25px;
+    height: 200px;
+    margin: 7px 0px;
+    cursor: pointer;
+    text-indent: -5555em;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    transition: all 0.15s ease-in-out 0s;
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.27);
+-moz-box-shadow: 0 0 6px rgba(0,0,0,0.27);
+box-shadow: 0 0 6px rgba(0,0,0,0.27);
+}
+.fcarousel .carousel-prev {
+	background:#F06C00 url(images/scroll-left.png) no-repeat right 90px;
+	left:-35px;
+	border-radius: 3px 0px 0px 3px;
+}
+.fcarousel .carousel-next {
+	background:#F06C00 url(images/scroll-right.png) no-repeat left 90px;
+	right:-35px;
+	border-radius: 0px 3px 3px 0px;
+}
+.fcarousel .carousel-prev:hover {
+	background:#F18229 url(images/scroll-left.png) no-repeat right 90px;
+}
+.fcarousel .carousel-next:hover {
+	background:#F18229 url(images/scroll-right.png) no-repeat left 90px;
+}
+/*------------------ Post Sidebar -----------------------*/
+.post-sidebar {margin:0px 0px 30px 10px;}
+.post-sidebar-box {margin-top: 30px;margin-bottom: 30px;}
+.side-itemlist{list-style: none;margin: 0px;position: relative;padding: 0px;}
+.side-item{margin: 0px 0px 10px 0px;background: #ffffff;border-radius: 2px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.27);
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,0.27);
+    box-shadow: 0 0 6px rgba(0,0,0,0.27);}
+.side-thumb {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.side-item img{width: 100px;height: 100px;background: #ffffff;}
+.side-item .info {margin-top:8px;display: inline-block;vertical-align: top;margin-left: 10px;width: 215px;}
+.side-item h3, .side-item h4 {
+    position: relative;
+    display: block;
+   height: 18px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+}
+.side-item h3 {font-weight: 400;}
