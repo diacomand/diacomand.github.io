@@ -169,7 +169,7 @@ $('.search_track').click(function() {
 	switch($(this).attr('social')) {
 		case 'vk': window.open('https://vk.com/audio?q=' + searchArtist + mulka + searchTitle); break;
 		case 'scloud': window.open('https://soundcloud.com/search?q=' + searchArtist + mulka + searchTitle); break;
-		case 'spotify': window.open('https://open.spotify.com/search/' + searchTitle); break;
+		case 'spotify': window.open('https://open.spotify.com/search/' + searchArtist); break;
 		case 'yandex': window.open('https://music.yandex.ru/search?text=' + searchArtist + mulka + searchTitle); break;
 		case 'itunes': window.open('https://music.apple.com/ru/search?term=' + searchArtist + mulka + searchTitle); break;	
 	}
