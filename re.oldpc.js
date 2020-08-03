@@ -169,7 +169,7 @@ $('.search_track').click(function() {
 	switch($(this).attr('social')) {
 		case 'vk': window.open('https://vk.com/audio?q=' + searchArtist + mulka + searchTitle); break;
 		case 'scloud': window.open('https://soundcloud.com/search?q=' + searchArtist + mulka + searchTitle); break;
-		case 'spotify': window.open('https://open.spotify.com/search/' + searchArtist); break;
+		case 'spotify': window.open('https://open.spotify.com/search/' + mulka + searchTitle); break;
 		case 'yandex': window.open('https://music.yandex.ru/search?text=' + searchArtist + mulka + searchTitle); break;
 		case 'itunes': window.open('https://music.apple.com/ru/search?term=' + searchArtist + mulka + searchTitle); break;	
 	}
@@ -214,7 +214,7 @@ if (saveRadioSettings == "true") {
 	st = getCookie('ca_lastStation');
 	if (!st) { st = 'rr' }
 	if (!getCookie('ca_lastVolume')) {
-		radio.volume = "0.8";
+		radio.volume = "0.9";
 	} else {
 		radio.volume = getCookie('ca_lastVolume');
 	}
