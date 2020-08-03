@@ -249,9 +249,25 @@ section.player .radio-sector .search-section i {
     -ms-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-player-settings-window .ps-section .search-section i.fa-spotify,player-settings-window .ps-section .search-section i.fa-itunes{font-size:26px}
 
-player-settings-window .ps-section .search-section i.fa-yandex{font-size:24px}.fa-spotify:hover{color:#1ed760;transition:all .3s}.fa-itunes:hover{color:#d666ec;transition:all .3s;font-size:28px}.fa-yandex:hover{color:#ff4747;transition:all .3s}
+
+player-settings-window .ps-section .search-section i.fa-yandex{font-size:28px}
+
+.fa-spotify:hover{color:#1ed760;-webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;}
+.fa-itunes:hover{color:#d666ec;-webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;}
+.fa-yandex:hover{color:#ff4747;-webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;}
 section.player .settings-btn,
 section.player .pl-btn {
 	height: 10px;
