@@ -187,9 +187,9 @@ section.player .player-btn .controls:hover:not(.loading-player) {
 	transition: all .3s;
 }
 section.player .radio-sector .namestation {
-	font-size: 46px;
+	font-size: 45px;
 	text-transform: uppercase;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
