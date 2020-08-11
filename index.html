@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8" /><meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no"><title>Radio Record — Online player</title><link rel="dns-prefetch" href="https://code.jquery.com/"><link rel="dns-prefetch" href="https://yastatic.net"><meta name="msapplication-TileColor" content="#ffffff"><meta name="theme-color" content="#ffffff"><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-title" content="Record player" /><meta name="apple-mobile-web-app-status-bar-style" content="default" /><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="yandex-tableau-widget" href="manifest.json" /><link rel="mask-icon" href="safari-pinned-tab.svg" color="#ff6600"><meta name="robots" content="index, follow" /><meta name="keywords" content="радио рекорд, рекорд онлайн, radio record, радио онлайн, слушать онлайн, слушать рекорд, радиостанция рекорд"><meta name="description" content="73 онлайн радиостанции. Эфир без рекламы."><meta name="yandex-verification" content="1ed328a3fa1309aa" /><meta name='wmail-verification' content='21ee858c36d7a76f635452005439e6c6' /><meta name="google-site-verification" content="NkJHFF629QsTfhvshgqGr12Er3KbP49RLdR8mzCuQSU" /><meta property="og:title" content="Record player"><meta property="og:description" content="73 онлайн радиостанции. Эфир без рекламы."/><meta property="og:type" content="website"><meta property="og:url" content="https://recordstation.ru/"><meta property="og:image" content="rst.jpg"><meta property="og:site_name" content="recordstation.ru"><meta name="google" value="notranslate"><link rel="canonical" href="http://recordstation.ru/"/><link rel="stylesheet" href="css/all.css"><link rel="stylesheet" href="styl.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="record.css"><link rel="stylesheet" href="player_settings.css"><link rel="stylesheet" href="radiolist.css"><link rel="stylesheet" href="schedule.css"> <script type="text/javascript"> var timestamp = Math.round(new Date().getTime() / 1000);  var servuser = 1578192836 - timestamp; </script><script src='https://code.jquery.com/jquery-1.12.4.min.js'></script></head>
 <body class="loading-page"><style type="text/css">  html, body {background-color: #191919;}</style>
 <div class="body"><section class="player"><div class="background-sector"></div><div class="player-sector">
- <div class="content"><div class="navigation" id="radio"></div><div class="block-content"><div class="img-section"><div class="img_track"><i class="icon-st-rr"></i></div></div>
+ <div class="content"><div class="navigation" id="radio"></div><div class="block-content"><a href="#" class="vk_link" target="_blank"><div class="img-section"></a><div class="img_track"><i class="icon-st-rr"></i></div></div>
  <div class="main-radio-sector"><div class="radio-sector radio"><div class="name namestation">Record</div>	 
 <div class="artist"></div><div class="title"></div><div class="player-settings-window"><div class="ps-section"><div class="radio-set"><div class="bitrate-btn" value="320">320 kbps</div><div class="bitrate-btn" value="128">128 kbps</div><div class="bitrate-btn" value="64">64 kbps</div><div class="bitrate-btn" value="aac_64">64 aac</div><div class="bitrate-btn" value="aac">32 aac</div>
 </div></div></div></div></div></div></div></div></section>
@@ -40,7 +40,7 @@ $(document).on('click', '.vk_add', function() {
 						var ttt3 = encodeURIComponent("Мне нравится ");
 						var ttt4 = encodeURIComponent(" на RECORDSTATION.RU!");
 						var ttt5 = encodeURIComponent("Кликайте и добавляйте!");
-						var link_text = "&title="+ttt3+artist+ttt2+name+ttt4+"&description="+ttt5+"&image="+image+"&noparse=1";
+						var link_text = ttt+artist+ttt2+name+"&title="+ttt3+artist+ttt2+name+ttt4+"&description="+ttt5+"&image="+image+"&noparse=1";
 						window.open(link_text,'popup', 'width=640,height=520')
 					});
 
@@ -67,7 +67,10 @@ $(document).on('click', '.vk_add', function() {
 						var windowFB = window.open(link_text,'popup', 'width=640,height=520');
 
 					});
-	
+	var trackName = $('.artist').html()+" - "+$('.title').html();
+						if (trackName!=" - ") {
+							$(".vk_link").attr("href", "https://vk.com/search?c%5Bq%5D="+ encodeURIComponent(trackName) +"&c%5Bsection%5D=audio")
+						}
 	</script>
 	
   <script type="text/javascript">
