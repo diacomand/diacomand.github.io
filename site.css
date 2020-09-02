@@ -318,6 +318,11 @@ canvas {position: absolute;z-index: 1;
   cursor: pointer;
 animation: none;
 }
+.pulse.active{
+ 
+  box-shadow: 0 0 0 rgba(255,87,34, 0.4);
+  animation: pulse 2s infinite;	
+}
 .controls, .loading-player {
  font-size: 16px;
  line-height: 45px;
@@ -328,7 +333,7 @@ text-align:center;
 .pulse:hover {
  
   box-shadow: 0 0 0 rgba(255,87,34, 0.4);
-  animation: pulse 2s infinite;	
+animation: none;	
 }
 @-webkit-keyframes pulse {
   0% {
