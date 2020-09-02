@@ -318,7 +318,7 @@ canvas {position: absolute;z-index: 1;
   cursor: pointer;
 animation: none;
 }
-.pulse.active{
+.pulse: active{
  
   box-shadow: 0 0 0 rgba(255,87,34, 0.4);
   animation: pulse 2s infinite;	
