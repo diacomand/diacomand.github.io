@@ -316,7 +316,8 @@ canvas {position: absolute;z-index: 1;
   border-radius: 50%;
   background: #ee7752;
   cursor: pointer;
-animation: none;
+box-shadow: 0 0 0 rgba(22,22,22, 0.4);
+  animation: pulse 2s infinite;
 }
 .pulse: active{
  
