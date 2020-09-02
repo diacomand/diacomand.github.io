@@ -63,7 +63,9 @@ input {
   opacity: .4;
   transform: translate3d(-50%, -50%, 0);
 }
-
+.blurred{
+		filter: blur(96px);
+	}
 header {
   align-items: center;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
