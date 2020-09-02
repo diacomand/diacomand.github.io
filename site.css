@@ -303,7 +303,7 @@ section.player .pl-btn:hover {
 .logo {
     width: 84px;
   height: 16px;
-	color: #ff5722;
+	color: #ee7752;
 }
 .background-sector  {z-index: 0;}  
 canvas {position: absolute;z-index: 1;
@@ -314,7 +314,7 @@ canvas {position: absolute;z-index: 1;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: #ff5722;
+  background: #e73c7e;
   cursor: pointer;
   box-shadow: 0 0 0 rgba(255,87,34, 0.4);
   animation: pulse 2s infinite;
