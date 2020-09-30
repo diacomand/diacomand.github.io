@@ -110,7 +110,7 @@ header input:focus, header input:active {
 header label {
   width: 36px;
   height: 36px;
-  background: url("/svgs/search.png") center/contain no-repeat;
+  background: url("/svgs/search.svg") center/contain no-repeat;
  
 }
 header label.close {  
@@ -124,7 +124,7 @@ header label {
 header .profile {
   width: 36px;
   height: 36px;
-  background: url(/svgs/heart.png) center/contain no-repeat;
+  background: url(/svgs/heart.svg) center/contain no-repeat;
   
   margin: 0 15px;
 }
