@@ -192,12 +192,12 @@ header .slider {
   align-items: center;
 }
 .side-menu .menu-holder span {
- 
+ color: #222;
 }
 .side-menu .menu {background:  url(/svgs/menu.svg) center no-repeat;
 }
 .side-menu .menu:hover {
-  opacity: .1;
+   color: #333;
 }
 .side-menu div #tu {
   list-style: none;
