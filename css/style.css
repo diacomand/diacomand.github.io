@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #F5F5F5;
+  background: #191919;
   font-family: Roboto,Verdana,sans-serif;
 }
 
@@ -105,22 +105,22 @@ header input:focus, header input:active {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1);
 }
 header label {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   background: url(svgs/search..png) center/contain no-repeat;
  
 }
 header label.close {  
   background: url(svgs/menu.png) center/contain no-repeat;
-     width: 36px;
-  height: 36px;
+     width: 32px;
+  height: 32px;
 }
 header label {
   margin-left: auto;
 }
 header .profile {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   background: url(svgs/heart.png) center/contain no-repeat;
   
   margin: 0 15px;
@@ -189,13 +189,11 @@ header .slider {
   align-items: center;
 }
 .side-menu .menu-holder span {
- color: #222;
+ color: #FF5722;
 }
 .side-menu .menu {background:  url(svgs/delete.png) center/contain no-repeat;
 }
-.side-menu .menu:hover {
-   color: #333;
-}
+
 .side-menu div #tu {
   list-style: none;
   color: #212121;
