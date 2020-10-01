@@ -79,11 +79,10 @@ header.shadow {background: #292929;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
 }
 header .menu {
-  background: url(/svgs/menu.svg) center no-repeat;
+  background: url(/svgs/menu.png) center/contain no-repeat;
 }
 
-header .menu:hover {
-background-color: #ee7752;}
+
 header h1 {
  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);	
   font-weight: 400;
@@ -110,11 +109,11 @@ header input:focus, header input:active {
 header label {
   width: 36px;
   height: 36px;
-  background: url("/svgs/search.svg") center/contain no-repeat;
+  background: url(/svgs/search..png) center/contain no-repeat;
  
 }
 header label.close {  
-  background: url("/svgs/menu.svg") center/contain no-repeat;
+  background: url(/svgs/menu.png) center/contain no-repeat;
      width: 36px;
   height: 36px;
 }
@@ -124,7 +123,7 @@ header label {
 header .profile {
   width: 36px;
   height: 36px;
-  background: url(/svgs/heart.svg) center/contain no-repeat;
+  background: url(/svgs/heart.png) center/contain no-repeat;
   
   margin: 0 15px;
 }
@@ -194,7 +193,7 @@ header .slider {
 .side-menu .menu-holder span {
  color: #222;
 }
-.side-menu .menu {background:  url(/svgs/menu.svg) center no-repeat;
+.side-menu .menu {background:  url(svgs/menu.png) center/contain no-repeat;
 }
 .side-menu .menu:hover {
    color: #333;
