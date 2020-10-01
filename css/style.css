@@ -63,9 +63,7 @@ input {
   opacity: .4;
   transform: translate3d(-50%, -50%, 0);
 }
-.blurred{
-		filter: blur(96px);
-	}
+
 header {
   align-items: center;
   
@@ -79,7 +77,7 @@ header.shadow {background: #292929;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
 }
 header .menu {
-  background: url(/svgs/menu.png) center/contain no-repeat;
+  background: url(svgs/menu.png) center/contain no-repeat;
 }
 
 
@@ -109,11 +107,11 @@ header input:focus, header input:active {
 header label {
   width: 36px;
   height: 36px;
-  background: url(/svgs/search..png) center/contain no-repeat;
+  background: url(svgs/search..png) center/contain no-repeat;
  
 }
 header label.close {  
-  background: url(/svgs/menu.png) center/contain no-repeat;
+  background: url(svgs/menu.png) center/contain no-repeat;
      width: 36px;
   height: 36px;
 }
@@ -123,7 +121,7 @@ header label {
 header .profile {
   width: 36px;
   height: 36px;
-  background: url(/svgs/heart.png) center/contain no-repeat;
+  background: url(svgs/heart.png) center/contain no-repeat;
   
   margin: 0 15px;
 }
@@ -193,7 +191,7 @@ header .slider {
 .side-menu .menu-holder span {
  color: #222;
 }
-.side-menu .menu {background:  url(svgs/menu.png) center/contain no-repeat;
+.side-menu .menu {background:  url(svgs/delete.png) center/contain no-repeat;
 }
 .side-menu .menu:hover {
    color: #333;
