@@ -151,7 +151,7 @@ section .center button svg {
 
 @media (max-width: 900px) {
   section .center {
-    margin-right: 30px;
+    margin-right: 16px;
   }
 }
 section .playlist {
