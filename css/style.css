@@ -92,9 +92,9 @@ header input { z-index: 99991;
   max-width: 800px;
   height: 48px;
   padding: 12px;
-  border-radius: 16px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   margin: 5px auto;
   color: #FFF;
   transition: .3s, width .01s;
@@ -104,7 +104,7 @@ header input:focus, header input:active { z-index: 99991;
   color: #000;
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1);
 }
-header label {
+header label {z-index: 99991;
   width: 32px;
   height: 32px;
   background: url(svgs/search..png) center/contain no-repeat;
@@ -118,7 +118,7 @@ header label.close {
 header label {
   margin-left: auto;
 }
-header .profile { border-radius: 3px;
+header .profile {z-index: 99991; border-radius: 3px;
   width: 32px;
   height: 32px;
   background: url(svgs/heart.png) center/contain no-repeat;
