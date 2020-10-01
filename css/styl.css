@@ -99,9 +99,10 @@ section .left .overlay svg {
   height: 20px;
 }
 section .left img {
-  width: 65px;
-  display: block;
+  width: 65px; border: 1px white;
+  display: block;box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); 
 }
+
 section .left .details {padding: 4px 16px;
   position: relative;
   overflow: hidden;
@@ -146,9 +147,7 @@ section .center button svg {
   fill: #fff;
 }
 
-section .center .play svg {
-  fill: White;
-}
+
 @media (max-width: 900px) {
   section .center {
     margin-right: 30px;
