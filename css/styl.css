@@ -3,6 +3,7 @@ html {
   --background: #333;
  --foreground: #292926; 
 --foregrounds: ;
+    
 box-sizing: border-box;
   font-family: Roboto,Verdana,sans-serif;
    
@@ -93,7 +94,7 @@ section .left .overlay {
   opacity: 0;
   margin: auto;
 }
-section .left .overlay svg {
+section .left .overlay img {
   fill: white;
   width: 20px;
   height: 20px;
