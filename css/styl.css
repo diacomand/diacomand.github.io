@@ -12,7 +12,12 @@ html * {
   padding: 0;
   margin: 0;
 }
-
+.blur {
+    z-index: 99;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+}
 
 body {
   margin: 0;
