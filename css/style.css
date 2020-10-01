@@ -170,7 +170,7 @@ header .slider {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+   z-index: 99993;
   transform: translateX(-100%) translateZ(0);
   transition: .3s;
   overflow-y: auto;
