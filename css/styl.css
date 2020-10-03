@@ -42,12 +42,13 @@ section {
   color: #fff;
   height: 65px;
   width: 100%;
-
+  
   position: fixed;
   bottom: 0;
   left: 0;
   display: flex;
   align-items: center;
+ 
 }
 section:hover .left .overlay {
   opacity: 1;
@@ -100,7 +101,7 @@ section .left .overlay img {
   height: 20px;
 }
 section .left img {border-radius: 5px; 
-  width: 60px; 
+  width: 60px; margin-left: 10px;
   display: block;box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); 
 }
 
