@@ -100,8 +100,8 @@ section .left .overlay img {
   width: 20px;
   height: 20px;
 }
-section .left img {border-radius: 5px; 
-  width: 50px; margin-left: 10px;
+section .left img {border-radius: 10%; 
+  width: 50px; margin-left: 16px;
   display: block;box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); 
 }
 
