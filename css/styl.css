@@ -101,7 +101,7 @@ section .left .overlay img {
   height: 20px;
 }
 section .left img {border-radius: 5px; 
-  width: 60px; margin-left: 10px;
+  width: 50px; margin-left: 10px;
   display: block;box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); 
 }
 
