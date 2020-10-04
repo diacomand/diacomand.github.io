@@ -107,7 +107,7 @@ header input:focus, header input:active { z-index: 99991;
 header label {z-index: 99991;
   width: 32px;
   height: 32px;
-  background: url(svgs/search..png) center/contain no-repeat;
+  background: url(svgs/search.png) center/contain no-repeat;
  border-radius: 3px;
 }
 header label.close {  
