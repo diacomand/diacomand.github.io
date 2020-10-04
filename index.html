@@ -14,7 +14,13 @@
 
 <section class="playerfooter"><div class="left"><div class="img_track footer_img_track"><img src="album.png"></div><div class="details"><div class="radio radioinfo"><div class="artist"></div><div class="title"></div></div></div></div><div class="center"><div class="player-btn"><div class="controls loading-player"><i class="fas fa-spinner fa-3x fa-fw"></i></div><div class="controls play white ripple" style="display: none"><img src="play.png"></div><div class="controls stop" style="display: none;"><img src="stop.png"></div></div></div>
 
-<div  class="right"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.restation.radio" class="lv"><span class="android white ripple"></span></a></div></section><audio src="" autoplay style="display: none;" id="recordplayer" controls></audio><script  src="js/script.js"></script> <script src="js/jquery.min.js"></script>
+<div  class="right">
+	<a href="https://play.google.com/store/apps/details?id=com.restation.radio" data-ga-click="Dashboard, click, Mobile Google Play">
+          <img src="https://github.githubassets.com/images/modules/dashboard/google-play-badge.png" alt="Get it on Google Play" style="height: 40px">
+        </a>
+	</div>
+
+</section><audio src="" autoplay style="display: none;" id="recordplayer" controls></audio><script  src="js/script.js"></script> <script src="js/jquery.min.js"></script>
 	
 	
 <script src="js/oldre.radiorecord.player.js"></script><script src="js/oldre.trackinfo.internet.js"></script><script src="js/re.history.js"></script><script type="text/javascript"> region = 'region'; radioid = 'spb'; var checkReserve; reserve = false; $.ajaxSetup({cache: false}); $.getJSON('/stream', function (data) {if (data.stream == false) checkReserve = setInterval("checkStreamFunc()", 10000);});

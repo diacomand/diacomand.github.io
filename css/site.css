@@ -94,7 +94,7 @@ section.player {margin-top:0;padding-top: 60px;
 	
 	
 }
-section.playerfooter {margin: 0;  border-top: 3px solid #292926;  border-top-left-radius: 3px; border-top-right-radius: 3px; 
+section.playerfooter { width: 100%; background: #292926!important; color: #fff; 
 }  
  
 
