@@ -241,7 +241,7 @@ header .slider {
   transition: .3s;
 }
 
-.account {z-index: 99999;
+.account {z-index: 99991;
   background: #EEE;
   position: fixed;
   top: 62px;
@@ -251,7 +251,7 @@ header .slider {
   visibility: hidden;
   transform: scale(0.5);
   transform-origin: top right;
-  transition: .15s;
+  transition: .15s; border-radius: 10px;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
 }
 .account:after {
@@ -277,7 +277,7 @@ header .slider {
   visibility: visible;
   transform: rotate(45deg) scale(1);
 }
-.account li {
+.account li {border-radius: 10px;
   padding: 12px 16px;
   list-style: none;
   font: 300 16px Roboto;

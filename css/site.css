@@ -237,7 +237,7 @@ section.player .radio-sector .search-section i {
     -ms-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-.fa-vk {
+.vk {
 	color: #467fbf;
 	  -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -246,7 +246,15 @@ section.player .radio-sector .search-section i {
     transition: all .3s ease-in-out;
 }
 
-.fa-soundcloud {
+.zvuk {
+	color: #08a652;
+	  -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.soundcloud {
 	color: #f94f00;
 	  -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -255,19 +263,19 @@ section.player .radio-sector .search-section i {
     transition: all .3s ease-in-out;
 }
 
-.fa-spotify{color:#1ed760;
+.spotify{color:#1DB954;
 	-webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;}
-.fa-itunes{color:#d666ec;
+.apmusic{color:#d666ec;
 	-webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;}
-.fa-yandex{color:#ff4747;
+.ya{color:#ff4747;
 	-webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
