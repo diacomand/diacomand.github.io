@@ -108,17 +108,17 @@ header label {z-index: 99991;
   width: 32px;
   height: 32px;
   background: url(svgs/search.png) center/contain no-repeat;
- border-radius: 3px;
+ border-radius: 5px;
 }
 header label.close {  
-  background: url(svgs/menu.png) center/contain no-repeat;
+  background: url(svgs/delete.png) center/contain no-repeat;
      width: 32px;
-  height: 32px; border-radius: 3px;
+  height: 32px; border-radius: 5px;
 }
 header label {
   margin-left: auto;
 }
-header .profile {z-index: 99991; border-radius: 3px;
+header .profile {z-index: 99991; border-radius: 5px;
   width: 32px;
   height: 32px;
   background: url(svgs/heart.png) center/contain no-repeat;
@@ -223,7 +223,7 @@ header .slider {
   font-size: 16px;
   text-transform: uppercase;
   padding: 5px 8px;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   margin: 20px auto;
 }
