@@ -165,7 +165,7 @@ header .slider {
 .side-menu {
   justify-content: left;
   flex-wrap: wrap;
-  background-color: #fff;
+  background: #fff;
   
   height: 100%;
   width: 224px;
@@ -244,7 +244,7 @@ header .slider {
 }
 
 .account {z-index: 99999;
-  bbackground-color: #eee;
+  bbackground: #eee;
 
   position: fixed;
   top: 62px;
