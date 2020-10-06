@@ -73,7 +73,8 @@ header {
   z-index: 99991;
 
 }
-header.shadow {background: #292929;
+header.shadow {background-color: rgba(41, 41, 38, .9);
+    backdrop-filter: blur(5px);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
 }
 header .menu {
