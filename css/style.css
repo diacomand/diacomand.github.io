@@ -73,7 +73,8 @@ header {
   z-index: 99991;
 
 }
-header.shadow {background: #292929;
+header.shadow {background-color: rgba(41, 41, 38, .9);
+    backdrop-filter: blur(5px);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
 }
 header .menu {
@@ -164,7 +165,8 @@ header .slider {
 .side-menu {
   justify-content: left;
   flex-wrap: wrap;
-  background: #FFF;
+  background-color: rgba(255, 255, 255, .9);
+    backdrop-filter: blur(5px);
   height: 100%;
   width: 224px;
   position: fixed;
@@ -241,8 +243,9 @@ header .slider {
   transition: .3s;
 }
 
-.account {z-index: 99991;
-  background: #EEE;
+.account {z-index: 99999;
+
+background: #eee;
   position: fixed;
   top: 62px;
   right: 15px;
@@ -255,6 +258,7 @@ header .slider {
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
 }
 .account:after {
+  z-index: 99999;
   content: '';
   width: 15px;
   height: 15px;
@@ -280,7 +284,7 @@ header .slider {
 .account li {border-radius: 10px;
   padding: 12px 16px;
   list-style: none;
-  font: 300 16px Roboto;
+  font: 300 16px;
   cursor: pointer;
   transition: .3s;
 }
