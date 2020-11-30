@@ -120,7 +120,7 @@ a.logo_text {
     justify-content: center;
     margin: 25px auto 25px;
 }
-a.logo_text span {
+a.logo_text p {
     background: #ff574d;
     line-height: 1;
     display: inline-block;
