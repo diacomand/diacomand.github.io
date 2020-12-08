@@ -14,9 +14,9 @@ function update_track_internet() {
 			break;
 		case 'internet':
 			$.ajaxSetup({cache: false});
-			$.getJSON('https://tags.radiorecord.fm/now.php?chan='+st', function (data) {
+			$.getJSON('https://tags.radiorecord.fm/now.php?chan='+st+', function (data) {
 				$('.radio').children('.artist').text(data.artist);
-				$('.radio').children('.title').text(data.trackname);
+				$('.radio').children('.title').text(data.title);
 				if (typeof data.image600 === 'undefined' || typeof data.image600 === null || typeof data.image600 === '') {
 					$('.img_track').html('<i class="icon-station-'+st+'"></i>');
 					$('.footer_img_track').html('<img src="album.png">');
