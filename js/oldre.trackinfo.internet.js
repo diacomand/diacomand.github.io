@@ -84,7 +84,7 @@ function progress_off() { // Отключение прогресс-бара.
 }
 function spbinfo() { // Получение информации из Питера.
 	$.ajaxSetup({cache: false});
-	$.getJSON('https://tags.radiorecord.fm/now.php?chan='+st', function (data) {
+	$.getJSON('https://www.radiorecord.ru/xml/rr_online_v8.txt', function (data) {
 		$('.radio').children('.artist').text(data.artist);
 		$('.radio').children('.title').text(data.title);
 		if (typeof data.image600 === 'undefined' || typeof data.image600 === null || typeof data.image600 === '' || data.artist === 'Record Dance Radio' || data.artist === 'Record Club') {
