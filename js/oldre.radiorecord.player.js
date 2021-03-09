@@ -14,18 +14,18 @@ var aezakmi = false;
 var lastVolume = 0.9;
 
 
-/* 
+
 function stop() {
 	radio.pause();
 	radio.src = "";
 	playindex = null; // Убираем проверку станции.
-	$('.audioplayer-playpause').css('display','');
-	$('.audioplayer-playpause').css('display','none');
+	$('.play').css('display','');
+	$('.stop').css('display','none');
 	$('.station').removeClass('active_station');
 }
 
 
-$('.audioplayer-playpausen').click(function() { // Если человек тыкнет на "стоп",
+$('.stop').click(function() { // Если человек тыкнет на "стоп",
 	err = false; // то не считаем это за ошибку,
 	if (aezakmi == true) {
 		radio.pause();
@@ -41,7 +41,7 @@ $('.audioplayer-playpausen').click(function() { // Если человек ты�
  */
 function playerRestart() {
 	stop();
-	$('.audioplayer-playpause').trigger('click');
+	$('.play').trigger('click');
 }
 
 /* СТАРТ СО СПИСКА */
@@ -108,8 +108,8 @@ $('.station').click(function() {
 		}
 		$('.radio-logo').html('<i class="icon-st-'+st+'"></i>');
 		playindex = st; // Запоминаем станцию.
-		$('..audioplayer-playpause').css('display','none');
-		$('..audioplayer-playpause').css('display','');
+		$('.audioplayer-playpause').css('display','none');
+		$('.stop').css('display','');
 		$(this).addClass('active_station');
 		if (radioid == 'kaz' && region == 'regions' && st == 'rr') {
 			radio.playbackRate = 1.011111;
@@ -123,7 +123,7 @@ $('.station').click(function() {
 });
 
 /* СТАРТ С КНОПКИ */
-$('..audioplayer-playpause').click(function start_btn() {
+$('.audioplayer-playpause').click(function start_btn() {
 	$('.play').css('display','none');
 	$('.stop').css('display','');
 	if (aezakmi == true) {
