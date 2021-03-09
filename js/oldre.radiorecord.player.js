@@ -1,6 +1,6 @@
 // Плеер для полной версии.
 
-var radio = jQuery("#recordplayer").get(0); // Задаём плеер.
+var radio = jQuery(".audioplayer").get(0); // Задаём плеер.
 var st; // Для потока.
 var radioid; // Для проверки региона.
 var playindex; // Для проверки играющей станции.
@@ -25,7 +25,7 @@ function stop() {
 }
 
 /* СТОП С КНОПКИ */
-$('.stop').click(function() { // Если человек тыкнет на "стоп",
+$('.audioplayer-playpause').click(function() { // Если человек тыкнет на "стоп",
 	err = false; // то не считаем это за ошибку,
 	if (aezakmi == true) {
 		radio.pause();
@@ -41,7 +41,7 @@ $('.stop').click(function() { // Если человек тыкнет на "ст
 /* РЕСТАРТ ПЛЕЕРА */
 function playerRestart() {
 	stop();
-	$('.play').trigger('click');
+	$('.audioplayer-playpause').trigger('click');
 }
 
 /* СТАРТ СО СПИСКА */
@@ -58,12 +58,12 @@ $('.station').click(function() {
 			err = false;
 		}
 		err = true; // Если что-то пойдёт не так, то это явно ошибка.
-		$('.artist').text("");
-		$('.title').text("загрузка...");
+		$('.ap-artist').text("");
+		$('.ap-title').text("загрузка...");
 		if (region == 'region' || region == 'regions') {
-			$('.img_track').html('<i class="icon-st-rr"></i>');
+			$('.ap-img').html('<i class="icon-st-rr"></i>');
 		} else {
-			$('.img_track').html('<i class="icon-station-'+st+'"></i>');
+			$('.ap-img').html('<i class="icon-station-'+st+'"></i>');
 		}
 		$('.footer_img_track').html('<img src="album.png">');
 		lastimg = "logo"; // Удаляем информацию для обновления обложки
