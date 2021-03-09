@@ -1,6 +1,6 @@
 // Плеер для полной версии.
 
-var radio = jQuery(".audioplayer").get(0); // Задаём плеер.
+var radio = jQuery(".player-hide").get(0); // Задаём плеер.
 var st; // Для потока.
 var radioid; // Для проверки региона.
 var playindex; // Для проверки играющей станции.
