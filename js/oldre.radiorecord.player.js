@@ -19,8 +19,8 @@ function stop() {
 	radio.pause();
 	radio.src = "";
 	playindex = null; // Убираем проверку станции.
-	$('.play').css('display','');
-	$('.stop').css('display','none');
+	$('.audioplayer-playpause').css('display','');
+	$('.audioplayer-playpause').css('display','none');
 	$('.station').removeClass('active_station');
 }
 
